@@ -83,13 +83,28 @@ export default function Home() {
           </p>
 
           {/* Rating Display */}
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col items-start gap-3">
+            {/* Avatars */}
+            <div className="flex items-center">
+              <div className="relative w-20 h-8">
+                <div className="absolute left-0 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 1" className="w-full h-full object-cover" />
+                </div>
+                <div className="absolute left-5 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 2" className="w-full h-full object-cover" />
+                </div>
+                <div className="absolute left-10 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 3" className="w-full h-full object-cover" />
+                </div>
+              </div>
+            </div>
+
             {/* Gold Stars */}
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
                 <svg
                   key={i}
-                  className="w-5 h-5 text-yellow-400"
+                  className="w-6 h-6 text-yellow-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -97,9 +112,12 @@ export default function Home() {
                 </svg>
               ))}
             </div>
+
             {/* Rating Text */}
-            <p className="text-sm text-gray-600">
-              Rated 4.9/5 by 37+ Business Owners
+            <p className="text-sm text-gray-700">
+              <span className="font-semibold">Rated 4.9</span>
+              <span className="text-gray-400"> from 500+</span>
+              <span className="font-semibold"> Business Owners</span>
             </p>
           </div>
         </div>
