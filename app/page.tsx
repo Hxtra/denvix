@@ -83,7 +83,7 @@ export default function Home() {
           </p>
 
           {/* Rating Display */}
-          <div className="flex flex-col items-start gap-3">
+          <div className="flex flex-col items-start gap-3 mb-12">
             {/* Avatars */}
             <div className="flex items-center">
               <div className="relative w-20 h-8">
@@ -119,6 +119,45 @@ export default function Home() {
               <span className="text-gray-400"> from 500+</span>
               <span className="font-semibold"> Business Owners</span>
             </p>
+          </div>
+
+          {/* 2x2 Image Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+            {/* Image 1: Client Testimonial */}
+            <div className="group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all hover:scale-[1.02] bg-gray-100 aspect-square">
+              <img
+                src="https://via.placeholder.com/400x400?text=Client+Testimonial"
+                alt="Client testimonial screenshot"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Image 2: Website Project */}
+            <div className="group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all hover:scale-[1.02] bg-gray-100 aspect-square">
+              <img
+                src="https://via.placeholder.com/400x400?text=Website+Project"
+                alt="Real website project screenshot"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Image 3: Revenue Dashboard */}
+            <div className="group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all hover:scale-[1.02] bg-gray-100 aspect-square">
+              <img
+                src="https://via.placeholder.com/400x400?text=Revenue+Dashboard"
+                alt="Stripe revenue dashboard screenshot"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Image 4: Before/After */}
+            <div className="group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all hover:scale-[1.02] bg-gray-100 aspect-square">
+              <img
+                src="https://via.placeholder.com/400x400?text=Before+After"
+                alt="Website before and after comparison"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
