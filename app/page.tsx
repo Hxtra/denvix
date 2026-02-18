@@ -57,67 +57,50 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-xl">
-              {/* Liquid Glass Badge - Project Slots */}
-              <div className="inline-flex items-center gap-2 mb-8 liquid-glass-badge px-4 py-2 rounded-full">
-                <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-                <span className="text-xs font-semibold tracking-wider uppercase text-red-600">
-                  Only 2 Project Slots Left for December
-                </span>
-              </div>
+        <div className="max-w-4xl mx-auto">
+          {/* Main Headline */}
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-gray-900 leading-tight">
+            We Build High-Converting Websites That Turn Visitors Into Clients.
+          </h1>
 
-              {/* Typography matching reference: Nordic (black), Precision. (italic beige), Global Impact. (red with icon) */}
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-1 text-gray-900">Nordic</h1>
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif italic tracking-tight mb-1 text-[#c9a68a]">
-                Precision.
-              </h1>
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-[#c94a4a] mb-8">
-                Global Impact.
-              </h1>
+          {/* Description */}
+          <p className="text-xl text-gray-500 mb-10 max-w-2xl leading-relaxed">
+            Premium web design for ambitious Norwegian businesses. Fast delivery. Transparent pricing. Real results.
+          </p>
 
-              <p className="text-gray-500 text-lg max-w-xl mb-10 leading-relaxed">
-                We build high-performance digital experiences tailored for Norwegian businesses. Premium development,
-                transparent pricing, and direct communication.
-              </p>
+          {/* Primary CTA Button */}
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] mb-6"
+          >
+            <MessageCircle className="w-5 h-5" />
+            Book Your Free Strategy Call
+          </a>
 
-              <div className="flex flex-wrap items-center gap-4 mb-8">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
+          {/* Trust Text */}
+          <p className="text-sm text-gray-400 mb-8">
+            5 Free Revisions Until You're 100% Satisfied
+          </p>
+
+          {/* Rating Display */}
+          <div className="flex items-center gap-4">
+            {/* Gold Stars */}
+            <div className="flex gap-1">
+              {[...Array(5)].map((_, i) => (
+                <svg
+                  key={i}
+                  className="w-5 h-5 text-yellow-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
                 >
-                  Start Your Project
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-                {/* Liquid Glass Button - View Portfolio */}
-                <a
-                  href="#work"
-                  className="liquid-glass-button inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all hover:scale-[1.02]"
-                >
-                  View Portfolio
-                </a>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2 text-gray-400 text-sm">
-                  <Clock className="w-4 h-4" />
-                  <span>Response time: Under 2 hours</span>
-                </div>
-              </div>
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
             </div>
-
-            <div className="hidden lg:block">
-              <div className="relative">
-                <div className="rounded-3xl overflow-hidden bg-gray-100 aspect-square">
-                  <img
-                    src="/abstract-3d-metallic-blue-and-gold-geometric-shape-new.jpg"
-                    alt="Abstract 3D metallic shapes"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
+            {/* Rating Text */}
+            <p className="text-sm text-gray-600">
+              Rated 4.9/5 by 37+ Business Owners
+            </p>
           </div>
         </div>
       </section>
