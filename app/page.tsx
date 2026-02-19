@@ -58,7 +58,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6 relative">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left: Text Content */}
             <div className="max-w-2xl">
               {/* Badge */}
@@ -70,26 +70,26 @@ export default function Home() {
               </div>
 
               {/* Main Headline */}
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-gray-900 leading-tight">
-                We Build High Converting Websites That Turn Visitors Into Clients.
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-gray-900 leading-[1.2]">
+                We Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">High-Converting</span> Websites That Turn Visitors Into Clients.
               </h1>
 
               {/* Description */}
-              <p className="text-lg md:text-xl text-gray-500 mb-10 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
                 Premium web design for ambitious Norwegian businesses. Fast delivery. Transparent pricing. Real results.
               </p>
 
               {/* Primary CTA Button */}
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] mb-6"
+                className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] mb-6 shadow-lg hover:shadow-xl"
               >
                 <MessageCircle className="w-5 h-5" />
                 Book Your Free Strategy Call
               </a>
 
               {/* Trust Text */}
-              <p className="text-sm text-gray-400 mb-8">
+              <p className="text-sm text-gray-500 mb-8">
                 5 Free Revisions Until You're 100% Satisfied
               </p>
 
@@ -98,13 +98,13 @@ export default function Home() {
                 {/* Avatars */}
                 <div className="flex items-center">
                   <div className="relative w-20 h-8">
-                    <div className="absolute left-0 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                    <div className="absolute left-0 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden shadow-md">
                       <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 1" className="w-full h-full object-cover" />
                     </div>
-                    <div className="absolute left-5 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                    <div className="absolute left-5 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden shadow-md">
                       <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 2" className="w-full h-full object-cover" />
                     </div>
-                    <div className="absolute left-10 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+                    <div className="absolute left-10 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden shadow-md">
                       <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 3" className="w-full h-full object-cover" />
                     </div>
                   </div>
@@ -115,7 +115,7 @@ export default function Home() {
                   {[...Array(5)].map((_, i) => (
                     <svg
                       key={i}
-                      className="w-6 h-6 text-yellow-400"
+                      className="w-5 h-5 text-yellow-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -127,16 +127,16 @@ export default function Home() {
                 {/* Rating Text */}
                 <p className="text-sm text-gray-700">
                   <span className="font-semibold">Rated 4.9</span>
-                  <span className="text-gray-400"> from 50+</span>
+                  <span className="text-gray-500"> from 50+</span>
                   <span className="font-semibold"> Business Owners</span>
                 </p>
               </div>
             </div>
 
             {/* Right: 2x2 Image Grid */}
-            <div className="hidden lg:grid grid-cols-2 gap-3 h-fit">
+            <div className="grid grid-cols-2 gap-3 lg:gap-4 h-fit">
               {/* Image 1: Client Testimonial */}
-              <div className="group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all hover:scale-[1.02] bg-gray-100 aspect-square">
+              <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] bg-gradient-to-br from-gray-50 to-gray-100 aspect-square border border-gray-200">
                 <img
                   src="https://via.placeholder.com/250x250?text=Client+Testimonial"
                   alt="Client testimonial screenshot"
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
 
               {/* Image 2: Website Project */}
-              <div className="group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all hover:scale-[1.02] bg-gray-100 aspect-square">
+              <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] bg-gradient-to-br from-gray-50 to-gray-100 aspect-square border border-gray-200">
                 <img
                   src="https://via.placeholder.com/250x250?text=Website+Project"
                   alt="Real website project screenshot"
@@ -154,7 +154,7 @@ export default function Home() {
               </div>
 
               {/* Image 3: Revenue Dashboard */}
-              <div className="group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all hover:scale-[1.02] bg-gray-100 aspect-square">
+              <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] bg-gradient-to-br from-gray-50 to-gray-100 aspect-square border border-gray-200">
                 <img
                   src="https://via.placeholder.com/250x250?text=Revenue+Dashboard"
                   alt="Stripe revenue dashboard screenshot"
@@ -163,7 +163,7 @@ export default function Home() {
               </div>
 
               {/* Image 4: Before/After */}
-              <div className="group rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all hover:scale-[1.02] bg-gray-100 aspect-square">
+              <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] bg-gradient-to-br from-gray-50 to-gray-100 aspect-square border border-gray-200">
                 <img
                   src="https://via.placeholder.com/250x250?text=Before+After"
                   alt="Website before and after comparison"
