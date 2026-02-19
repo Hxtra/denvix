@@ -411,16 +411,16 @@ export default function Home() {
           </div>
 
           {/* Steps Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Step 1 */}
-            <div className="flex flex-col">
+            <div className="liquid-glass-service-card p-6 rounded-2xl flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
                     1
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Free Website Audit</h3>
+                <h3 className="text-lg font-semibold text-gray-900">Free Website Audit</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
                 We review your current website or idea and send you a detailed improvement breakdown.
@@ -428,14 +428,14 @@ export default function Home() {
             </div>
 
             {/* Step 2 */}
-            <div className="flex flex-col">
+            <div className="liquid-glass-service-card p-6 rounded-2xl flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
                     2
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">WhatsApp Strategy Chat</h3>
+                <h3 className="text-lg font-semibold text-gray-900">WhatsApp Strategy Chat</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
                 We discuss your goals, timeline, and budget directly on WhatsApp. No long meetings. Clear direction. Fast replies.
@@ -443,14 +443,14 @@ export default function Home() {
             </div>
 
             {/* Step 3 */}
-            <div className="flex flex-col">
+            <div className="liquid-glass-service-card p-6 rounded-2xl flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
                     3
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Design and Development</h3>
+                <h3 className="text-lg font-semibold text-gray-900">Design and Development</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
                 We design, build, and optimize your website for conversions and performance.
@@ -458,14 +458,14 @@ export default function Home() {
             </div>
 
             {/* Step 4 */}
-            <div className="flex flex-col">
+            <div className="liquid-glass-service-card p-6 rounded-2xl flex flex-col">
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
                     4
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Launch and Ongoing Support</h3>
+                <h3 className="text-lg font-semibold text-gray-900">Launch and Ongoing Support</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
                 We launch your site, monitor performance, and provide support after delivery.
