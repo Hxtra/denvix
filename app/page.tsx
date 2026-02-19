@@ -204,6 +204,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Growth & Stats Section */}
+      <section className="py-16 px-6 border-t border-gray-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-12">
+            {/* Stat 1 */}
+            <div className="flex flex-col items-start">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
+                Trusted by growing businesses
+              </h3>
+              <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Working with ambitious entrepreneurs and established brands across Norway.
+              </p>
+            </div>
+
+            {/* Stat 2 */}
+            <div className="flex flex-col items-start">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
+                Delivered projects across multiple industries
+              </h3>
+              <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                From e-commerce to SaaS, healthcare to creative agencies.
+              </p>
+            </div>
+
+            {/* Stat 3 */}
+            <div className="flex flex-col items-start">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
+                Fast turnaround. Clear pricing.
+              </h3>
+              <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                No surprises. No hidden fees. Just transparent, honest business.
+              </p>
+            </div>
+          </div>
+
+          {/* Key Stats */}
+          <div className="grid md:grid-cols-2 gap-8 mt-16 pt-16 border-t border-gray-100">
+            <div className="flex flex-col">
+              <p className="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-3">Achievement</p>
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">58+</h3>
+              <p className="text-gray-600">Completed Projects</p>
+            </div>
+
+            <div className="flex flex-col">
+              <p className="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-3">Speed</p>
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">7-14</h3>
+              <p className="text-gray-600">Days Average Delivery Time</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Trust & Payments Section */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
