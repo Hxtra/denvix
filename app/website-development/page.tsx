@@ -62,12 +62,9 @@ export default function WebsiteDevelopmentPage() {
 
           {/* Primary CTA */}
           <a
-            href={messengerLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
           >
-            <MessageCircle className="w-5 h-5" />
             Request Website Development Offer
           </a>
         </div>
@@ -365,12 +362,9 @@ export default function WebsiteDevelopmentPage() {
           <p className="text-xl text-gray-400 mb-10">Just a conversation.</p>
 
           <a
-            href={messengerLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all hover:scale-[1.02]"
           >
-            <MessageCircle className="w-5 h-5" />
             Request Website Development Offer
           </a>
         </div>

@@ -57,9 +57,7 @@ export default function ResponsiveRedesignPage() {
           </p>
 
           <a
-            href={messengerLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] text-lg"
           >
             Request Responsive Redesign Offer
@@ -360,9 +358,7 @@ export default function ResponsiveRedesignPage() {
           <p className="text-gray-500 text-lg mb-10">No calls. No pressure. Just a conversation.</p>
 
           <a
-            href={messengerLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-10 py-5 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] text-lg"
           >
             Request Responsive Redesign Offer

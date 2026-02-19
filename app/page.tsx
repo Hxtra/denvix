@@ -13,7 +13,6 @@ import {
   Phone,
   Mail,
   Facebook,
-  MessageCircle,
 } from "lucide-react"
 
 // Utility function to get current month
@@ -105,7 +104,6 @@ export default function Home() {
                 href="#contact"
                 className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] mb-6 shadow-lg hover:shadow-xl"
               >
-                <MessageCircle className="w-5 h-5" />
                 Book Your Free Strategy Call
               </a>
 
@@ -573,20 +571,6 @@ export default function Home() {
               <span className="text-white text-sm font-medium">Chat with Devnix on WhatsApp</span>
               <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <Phone className="w-5 h-5 text-white" />
-              </div>
-            </a>
-
-            {/* Facebook Messenger */}
-            <a
-              href="https://m.me/61585271784479?source=qr_link_share"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="liquid-glass-contact-link inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 rounded-full transition-all hover:scale-[1.02] w-auto"
-              style={{ minWidth: "300px" }}
-            >
-              <span className="text-white text-sm font-medium">Message us on Messenger</span>
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <MessageCircle className="w-5 h-5 text-white" />
               </div>
             </a>
 

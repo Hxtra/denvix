@@ -72,9 +72,7 @@ export default function WebsiteMaintenancePage() {
           </div>
 
           <a
-            href={messengerLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
           >
             Request Maintenance Support
@@ -376,9 +374,7 @@ export default function WebsiteMaintenancePage() {
           </p>
 
           <a
-            href={messengerLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
           >
             Request Maintenance Support
