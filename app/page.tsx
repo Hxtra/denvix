@@ -16,10 +16,31 @@ import {
   MessageCircle,
 } from "lucide-react"
 
+// Utility function to get current month
+function getCurrentMonth() {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+  return months[new Date().getMonth()]
+}
+
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const [currentMonth, setCurrentMonth] = useState("")
 
   useEffect(() => {
+    setCurrentMonth(getCurrentMonth())
     setIsLoaded(true)
     window.scrollTo(0, 0)
   }, [])
@@ -65,7 +86,7 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-red-50 border border-red-200">
                 <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
                 <span className="text-xs font-semibold tracking-wider uppercase text-red-600">
-                  Only 2 Project Slots Left for December
+                  Only 2 Project Slots Left for {currentMonth}
                 </span>
               </div>
 
@@ -349,7 +370,7 @@ export default function Home() {
           {/* Offer Status */}
           <div className="liquid-glass-status inline-flex items-center gap-4 px-6 py-3 rounded-full mb-12">
             <span className="text-sm text-gray-600">Offer Status</span>
-            <span className="text-sm font-semibold">December Slots</span>
+            <span className="text-sm font-semibold">{currentMonth} Slots</span>
             <span className="text-sm font-semibold text-amber-600">Closing Soon</span>
           </div>
 
