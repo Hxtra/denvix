@@ -399,6 +399,82 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-gray-900">How It Works</h2>
+            <p className="text-lg md:text-xl text-gray-500 max-w-2xl">
+              Simple process. Clear communication. Fast execution.
+            </p>
+          </div>
+
+          {/* Steps Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Step 1 */}
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
+                    1
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Free Website Audit</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We review your current website or idea and send you a detailed improvement breakdown.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
+                    2
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">WhatsApp Strategy Chat</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We discuss your goals, timeline, and budget directly on WhatsApp. No long meetings. Clear direction. Fast replies.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
+                    3
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Design and Development</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We design, build, and optimize your website for conversions and performance.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
+                    4
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Launch and Ongoing Support</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                We launch your site, monitor performance, and provide support after delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
       <section id="work" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
