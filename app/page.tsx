@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { LanguageSelector } from "@/app/components/LanguageSelector"
+import { useTranslation } from "@/app/hooks/useTranslation"
 import {
   Clock,
   Globe,
@@ -38,6 +39,7 @@ function getCurrentMonth() {
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [currentMonth, setCurrentMonth] = useState("")
+  const { t } = useTranslation()
 
   useEffect(() => {
     setCurrentMonth(getCurrentMonth())
@@ -89,18 +91,18 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-red-50 border border-red-200">
                 <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
                 <span className="text-xs font-semibold tracking-wider uppercase text-red-600">
-                  Only 2 Project Slots Left for {currentMonth}
+                  {t('heroBadge')} {currentMonth}
                 </span>
               </div>
 
               {/* Main Headline */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-gray-900 leading-[1.2]">
-                We Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">High-Converting</span> Websites That Turn Visitors Into Clients.
+                {t('heroHeadline')}
               </h1>
 
               {/* Description */}
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
-                Premium web design for ambitious Norwegian businesses. Fast delivery. Transparent pricing. Real results.
+                {t('heroDescription')}
               </p>
 
               {/* Primary CTA Button */}
@@ -108,12 +110,12 @@ export default function Home() {
                 href="#contact"
                 className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] mb-6 shadow-lg hover:shadow-xl"
               >
-                Book Your Free Strategy Call
+                {t('heroButton')}
               </a>
 
               {/* Trust Text */}
               <p className="text-sm text-gray-500 mb-8">
-                5 Free Revisions Until You're 100% Satisfied
+                {t('heroTrust')}
               </p>
 
               {/* Rating Display */}
@@ -149,9 +151,9 @@ export default function Home() {
 
                 {/* Rating Text */}
                 <p className="text-sm text-gray-700">
-                  <span className="font-semibold">Rated 4.9</span>
-                  <span className="text-gray-500"> from 50+</span>
-                  <span className="font-semibold"> Business Owners</span>
+                  <span className="font-semibold">{t('heroRated')} 4.9</span>
+                  <span className="text-gray-400"> {t('heroFrom')}</span>
+                  <span className="font-semibold"> {t('heroBusinessOwners')}</span>
                 </p>
               </div>
             </div>
@@ -234,33 +236,33 @@ export default function Home() {
             {/* Stat 1 */}
             <div className="flex flex-col items-start">
               <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
-                Trusted by growing businesses
+                {t('trustedHeading')}
               </h3>
               <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Working with ambitious entrepreneurs and established brands across Norway.
+                {t('trustedDescription')}
               </p>
             </div>
 
             {/* Stat 2 */}
             <div className="flex flex-col items-start">
               <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
-                Delivered projects across multiple industries
+                {t('deliveredHeading')}
               </h3>
               <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
               <p className="text-gray-500 text-sm leading-relaxed">
-                From e-commerce to SaaS, healthcare to creative agencies.
+                {t('deliveredDescription')}
               </p>
             </div>
 
             {/* Stat 3 */}
             <div className="flex flex-col items-start">
               <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
-                Fast turnaround. Clear pricing.
+                {t('pricingHeading')}
               </h3>
               <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
               <p className="text-gray-500 text-sm leading-relaxed">
-                No surprises. No hidden fees. Just transparent, honest business.
+                {t('pricingDescription')}
               </p>
             </div>
           </div>
@@ -270,13 +272,13 @@ export default function Home() {
             <div className="flex flex-col">
               <p className="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-3">Achievement</p>
               <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">58+</h3>
-              <p className="text-gray-600">Completed Projects</p>
+              <p className="text-gray-600">{t('completedProjects')}</p>
             </div>
 
             <div className="flex flex-col">
               <p className="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-3">Speed</p>
               <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">7-14</h3>
-              <p className="text-gray-600">Days Average Delivery Time</p>
+              <p className="text-gray-600">{t('deliveryDays')}</p>
             </div>
           </div>
         </div>
@@ -427,9 +429,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-gray-900">How It Works</h2>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-gray-900">{t('howItWorks')}</h2>
             <p className="text-lg md:text-xl text-gray-500 max-w-2xl">
-              Simple process. Clear communication. Fast execution.
+              {t('howItWorksSubtitle')}
             </p>
           </div>
 
@@ -443,10 +445,10 @@ export default function Home() {
                     1
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">Free Website Audit</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t('step1Title')}</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We review your current website or idea and send you a detailed improvement breakdown.
+                {t('step1Description')}
               </p>
             </div>
 
@@ -458,10 +460,10 @@ export default function Home() {
                     2
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">WhatsApp Strategy Chat</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t('step2Title')}</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We discuss your goals, timeline, and budget directly on WhatsApp. No long meetings. Clear direction. Fast replies.
+                {t('step2Description')}
               </p>
             </div>
 
@@ -473,10 +475,10 @@ export default function Home() {
                     3
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">Design and Development</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t('step3Title')}</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We design, build, and optimize your website for conversions and performance.
+                {t('step3Description')}
               </p>
             </div>
 
@@ -488,10 +490,10 @@ export default function Home() {
                     4
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">Launch and Ongoing Support</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t('step4Title')}</h3>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We launch your site, monitor performance, and provide support after delivery.
+                {t('step4Description')}
               </p>
             </div>
           </div>
