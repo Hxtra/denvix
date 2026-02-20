@@ -5,22 +5,28 @@ import { useLanguage } from '@/app/context/LanguageContext'
 import { Globe } from 'lucide-react'
 
 export function LanguageSelector() {
-  const { language, setLanguage } = useLanguage()
+  const { language, setLanguage, isLoaded } = useLanguage()
   const [showModal, setShowModal] = useState(false)
   const [isFirstVisit, setIsFirstVisit] = useState(false)
 
   useEffect(() => {
+    if (!isLoaded) return
+    
     // Check if user has already selected a language
     const hasSelectedLanguage = localStorage.getItem('language')
     if (!hasSelectedLanguage) {
       setShowModal(true)
       setIsFirstVisit(true)
     }
-  }, [])
+  }, [isLoaded])
 
   const handleLanguageSelect = (lang: 'no' | 'en') => {
     setLanguage(lang)
     setShowModal(false)
+  }
+
+  if (!isLoaded) {
+    return null
   }
 
   return (

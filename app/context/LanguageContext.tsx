@@ -7,6 +7,7 @@ type Language = 'no' | 'en'
 interface LanguageContextType {
   language: Language
   setLanguage: (lang: Language) => void
+  isLoaded: boolean
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
@@ -20,6 +21,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const saved = localStorage.getItem('language') as Language | null
     if (saved) {
       setLanguageState(saved)
+    } else {
+      setLanguageState('no')
     }
     setIsLoaded(true)
   }, [])
@@ -29,13 +32,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('language', lang)
   }
 
-  // Prevent rendering until hydrated to avoid hydration mismatch
-  if (!isLoaded) {
-    return <>{children}</>
-  }
-
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext.Provider value={{ language, setLanguage, isLoaded }}>
       {children}
     </LanguageContext.Provider>
   )
