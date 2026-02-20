@@ -60,13 +60,13 @@ export default function Home() {
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#work" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              Work
+              {t('work')}
             </a>
             <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              Services
+              {t('services')}
             </a>
             <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              Contact
+              {t('contact')}
             </a>
           </nav>
           <div className="flex items-center gap-4">
@@ -75,7 +75,7 @@ export default function Home() {
               href="#contact"
               className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
             >
-              Get in Touch
+              {t('getInTouch')}
             </a>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function Home() {
       {/* Trusted Technologies */}
       <section className="py-12 px-6 border-t border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <p className="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-6">Trusted Technologies</p>
+          <p className="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-6">{t('trustedTechnologies')}</p>
           <div className="flex flex-wrap gap-3">
             {[
               "Wise",
@@ -289,13 +289,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           {/* Liquid Glass Label */}
           <div className="liquid-glass-label inline-flex px-4 py-2 rounded-full mb-6">
-            <span className="text-sm font-medium text-gray-700">Trust & Payments</span>
+            <span className="text-sm font-medium text-gray-700">{t('trustPayments')}</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">
-            Seamless payments for
-            <br />
-            Norwegian clients.
+            {t('trustPaymentsTitle')}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -304,9 +302,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6">
                 <Globe className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">Pay in NOK</h3>
+              <h3 className="text-lg font-semibold mb-3">{t('payInNOK')}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Send the agreed amount directly in Norwegian Krone. No currency conversion confusion on your end.
+                {t('payInNOKDesc')}
               </p>
             </div>
 
@@ -314,9 +312,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">We Cover Wise Fees</h3>
+              <h3 className="text-lg font-semibold mb-3">{t('coverWiseFees')}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                We absorb all transfer fees through Wise. What you agree to pay is exactly what leaves your account.
+                {t('coverWiseFeesDesc')}
               </p>
             </div>
 
@@ -324,9 +322,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6">
                 <FileText className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">Full Transparency</h3>
+              <h3 className="text-lg font-semibold mb-3">{t('fullTransparency')}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Clear invoicing, tracked payments, and professional receipts for your business records.
+                {t('fullTransparencyDesc')}
               </p>
             </div>
           </div>
@@ -334,11 +332,9 @@ export default function Home() {
           {/* Wise CTA */}
           <div className="bg-gray-900 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-xl font-semibold text-white mb-2">New to Wise?</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('newToWise')}</h3>
               <p className="text-gray-400 text-sm">
-                Sign up using our referral link and enjoy your first transfer fee-free.
-                <br />
-                It's the fastest, most transparent way to send money internationally.
+                {t('newToWiseDesc')}
               </p>
             </div>
             <a
@@ -363,12 +359,11 @@ export default function Home() {
             <span className="text-sm font-semibold text-emerald-700">Flash Sale Active</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Premium Services.</h2>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-300 mb-8">Limited-Time Pricing.</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">{t('premiumServices')}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-300 mb-8">{t('limitedPricing')}</h2>
 
           <p className="text-gray-500 max-w-2xl mb-12">
-            Secure top-tier Nordic development standards at introductory rates. Prices revert to standard rates once
-            monthly slots are filled.
+            {t('servicesDescription')}
           </p>
 
           {/* Offer Status */}
@@ -505,18 +500,16 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <p className="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-2">Portfolio</p>
+              <p className="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-2">{t('portfolio')}</p>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Selected works for
-                <br />
-                ambitious brands
+                {t('ourWork')}
               </h2>
             </div>
             <a
               href="#"
               className="hidden md:inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors text-sm"
             >
-              View all case studies
+              {t('viewAllWork')}
               <ChevronRight className="w-4 h-4" />
             </a>
           </div>
@@ -556,12 +549,12 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-[#111111]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-2">Let's Build</h2>
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-8">Impact.</h2>
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-2">{t('letsBuild')}</h2>
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-8">{t('impact')}</h2>
 
           <p className="text-gray-400 mb-10 max-w-lg">
-            Ready to elevate your digital presence? Reach out today to claim your{" "}
-            <span className="text-white font-semibold">Free Advanced SEO Audit</span> with your project kickoff.
+            {t('contactDescription')}
+            <span className="text-white font-semibold">{t('freeAudit')}</span> {t('withProject')}
           </p>
 
           {/* Contact Links with Liquid Glass Effect */}
@@ -574,7 +567,7 @@ export default function Home() {
               className="liquid-glass-contact-link inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 rounded-full transition-all hover:scale-[1.02] w-auto"
               style={{ minWidth: "320px" }}
             >
-              <span className="text-white text-sm font-medium">Chat with Devnix on WhatsApp</span>
+              <span className="text-white text-sm font-medium">{t('chatWhatsApp')}</span>
               <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <Phone className="w-5 h-5 text-white" />
               </div>
@@ -600,7 +593,7 @@ export default function Home() {
               className="liquid-glass-contact-link inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 rounded-full transition-all hover:scale-[1.02] w-auto"
               style={{ minWidth: "200px" }}
             >
-              <span className="text-white text-sm font-medium">Devnix Global</span>
+              <span className="text-white text-sm font-medium">{t('devnixGlobal')}</span>
               <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <Facebook className="w-5 h-5 text-white" />
               </div>
@@ -619,14 +612,14 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Privacy Policy
+                {t('privacyPolicy')}
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Terms of Service
+                {t('termsOfService')}
               </a>
             </div>
           </div>
-          <p className="text-gray-500 text-sm mt-6">© 2025 Devnix. Built for Norway.</p>
+          <p className="text-gray-500 text-sm mt-6">{t('copyright')}</p>
         </div>
       </footer>
     </div>

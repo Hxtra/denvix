@@ -53,11 +53,54 @@ export const translations = {
     step4Title: 'Lansering og løpende support',
     step4Description: 'Vi lanserer ditt nettsted, overvåker ytelse og gir støtte etter levering.',
     
-    // Contact Section
+    // Navigation
+    work: 'Arbeid',
+    services: 'Tjenester',
     getInTouch: 'Kom i kontakt',
+    
+    // Trusted Technologies Section
+    trustedTechnologies: 'Betrodde teknologier',
+    
+    // Trust & Payments Section
+    trustPayments: 'Betrodd & Betalinger',
+    trustPaymentsTitle: 'Vi håndterer alt - du fokuserer på vekst.',
+    payInNOK: 'Betale i NOK',
+    payInNOKDesc: 'Enkelt, direkte norske bankoverføringer uten konvertering.',
+    coverWiseFees: 'Vi dekker Wise-avgifter',
+    coverWiseFeesDesc: 'Internasjonale betalinger? Vi dekker alle konverteringsgebyrer.',
+    fullTransparency: 'Fullstendig transparens',
+    fullTransparencyDesc: 'Ingen overraskelser. Alle kostnader og tidslinjer er avklart på forhånd.',
+    newToWise: 'Ny på Wise?',
+    newToWiseDesc: 'Jeg vil dekke alle dine gebyr for internasjonale betalinger og gi deg full transparens.',
+    
+    // Services Section
+    premiumServices: 'Premium tjenester.',
+    limitedPricing: 'Begrenset tidspris.',
+    servicesDescription: 'For kort tid er vi tilbyr aggressive rabatter på alle våre skap. Slots er fylt hver måned.',
+    
+    // Portfolio Section
+    portfolio: 'Portefølje',
+    ourWork: 'Vårt arbeid',
+    viewAllWork: 'Se alt arbeid',
+    
+    // Contact Section
+    letsBuild: 'La oss bygge',
+    impact: 'Innvirkning.',
+    freeAudit: 'Gratis avansert SEO-revisjon',
+    withProject: 'med ditt prosjekt kickoff.',
+    chatWhatsApp: 'Chat med Devnix på WhatsApp',
     email: 'E-post',
-    phone: 'Telefon',
-    messageUs: 'Send oss en melding',
+    devnixGlobal: 'Devnix Global',
+    copyright: '© 2025 Devnix. Bygget for Norge.',
+    
+    // Footer
+    home: 'Hjem',
+    about: 'Om oss',
+    privacyPolicy: 'Personvern',
+    termsOfService: 'Vilkår for tjenesten',
+    
+    // Contact Description
+    contactDescription: 'Klar til å heve din digitale tilstedeværelse? Kontakt oss i dag for å kreve din ',
   },
   en: {
     // Language Selector
@@ -113,11 +156,54 @@ export const translations = {
     step4Title: 'Launch and Ongoing Support',
     step4Description: 'We launch your site, monitor performance, and provide support after delivery.',
     
+    // Navigation
+    work: 'Work',
+    services: 'Services',
+    getInTouch: 'Get in Touch',
+    
+    // Trusted Technologies Section
+    trustedTechnologies: 'Trusted Technologies',
+    
+    // Trust & Payments Section
+    trustPayments: 'Trust & Payments',
+    trustPaymentsTitle: 'We handle everything - you focus on growth.',
+    payInNOK: 'Pay in NOK',
+    payInNOKDesc: 'Simple, direct Norwegian bank transfers without conversion.',
+    coverWiseFees: 'We Cover Wise Fees',
+    coverWiseFeesDesc: 'International payments? We cover all conversion fees.',
+    fullTransparency: 'Full Transparency',
+    fullTransparencyDesc: 'No surprises. All costs and timelines are clarified upfront.',
+    newToWise: 'New to Wise?',
+    newToWiseDesc: 'I\'ll cover all your international payment fees and give you full transparency.',
+    
+    // Services Section
+    premiumServices: 'Premium Services.',
+    limitedPricing: 'Limited-Time Pricing.',
+    servicesDescription: 'For a limited time we\'re offering aggressive discounts on all our packages. Slots fill each month.',
+    
+    // Portfolio Section
+    portfolio: 'Portfolio',
+    ourWork: 'Our Work',
+    viewAllWork: 'View All Work',
+    
     // Contact Section
-    getInTouch: 'Get In Touch',
+    letsBuild: 'Let\'s Build',
+    impact: 'Impact.',
+    freeAudit: 'Free Advanced SEO Audit',
+    withProject: 'with your project kickoff.',
+    chatWhatsApp: 'Chat with Devnix on WhatsApp',
     email: 'Email',
-    phone: 'Phone',
-    messageUs: 'Message Us',
+    devnixGlobal: 'Devnix Global',
+    copyright: '© 2025 Devnix. Built for Norway.',
+    
+    // Footer
+    home: 'Home',
+    about: 'About',
+    privacyPolicy: 'Privacy Policy',
+    termsOfService: 'Terms of Service',
+    
+    // Contact Description
+    contactDescription: 'Ready to elevate your digital presence? Reach out today to claim your ',
   },
 }
 
