@@ -166,17 +166,17 @@ export default function WebsiteDevelopmentPage() {
       {/* What's Included Section */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">What is included.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">{t('whatIncluded')}</h2>
 
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              "Custom UI and UX design",
-              "React and Next.js development",
-              "Mobile-first responsive layout",
-              "SEO-ready structure",
-              "GDPR-friendly setup",
-              "Clean maintainable codebase",
-              "30 days post-launch support",
+              t('customUiUx'),
+              t('reactNextjs'),
+              t('mobileFirst'),
+              t('seoReady'),
+              t('gdprFriendly'),
+              t('cleanCode'),
+              t('postLaunchSupport'),
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3 p-4 liquid-glass-card rounded-xl">
                 <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -192,7 +192,7 @@ export default function WebsiteDevelopmentPage() {
       {/* Process & Timeline Section */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">Process and timeline.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">{t('processTimeline')}</h2>
 
           <div className="space-y-6">
             <div className="liquid-glass-card p-8 rounded-2xl">
@@ -201,10 +201,9 @@ export default function WebsiteDevelopmentPage() {
                   <span className="text-white font-bold">1</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Week 1</h3>
+                  <h3 className="text-xl font-semibold mb-2">{t('week1')}</h3>
                   <p className="text-gray-500 leading-relaxed">
-                    Strategy, structure, and design direction. We understand your business and plan the perfect website
-                    architecture.
+                    {t('week1Desc')}
                   </p>
                 </div>
               </div>
@@ -216,9 +215,9 @@ export default function WebsiteDevelopmentPage() {
                   <span className="text-white font-bold">2</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Week 2</h3>
+                  <h3 className="text-xl font-semibold mb-2">{t('week2')}</h3>
                   <p className="text-gray-500 leading-relaxed">
-                    Development and implementation. Your website takes shape with clean code and premium design.
+                    {t('week2Desc')}
                   </p>
                 </div>
               </div>
@@ -230,29 +229,29 @@ export default function WebsiteDevelopmentPage() {
                   <span className="text-white font-bold">3</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Week 3</h3>
+                  <h3 className="text-xl font-semibold mb-2">{t('week3')}</h3>
                   <p className="text-gray-500 leading-relaxed">
-                    Testing, refinement, and launch. We polish every detail and deploy your website live.
+                    {t('week3Desc')}
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <p className="mt-8 text-gray-500 text-center">Transparent delivery. Calm process. No surprises.</p>
+          <p className="mt-8 text-gray-500 text-center">{t('transparentDelivery')}</p>
         </div>
       </section>
 
       {/* Pricing Psychology Section */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Typical Costs and Timelines in Norway.</h2>
-          <p className="text-gray-500 mb-12">What Norwegian businesses typically pay for web development.</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">{t('typicalCosts')}</h2>
+          <p className="text-gray-500 mb-12">{t('whatBusinessesPay')}</p>
 
           <div className="space-y-4 mb-16">
             <div className="liquid-glass-card p-6 rounded-xl">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <span className="text-gray-700 font-medium">Basic business websites</span>
+                <span className="text-gray-700 font-medium">{t('basicWebsites')}</span>
                 <div className="text-left sm:text-right">
                   <span className="text-gray-900 font-semibold">30,000 – 60,000 NOK</span>
                   <span className="text-gray-400 text-sm ml-2">/ 2-4 weeks</span>
@@ -262,7 +261,7 @@ export default function WebsiteDevelopmentPage() {
 
             <div className="liquid-glass-card p-6 rounded-xl">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <span className="text-gray-700 font-medium">E-commerce stores</span>
+                <span className="text-gray-700 font-medium">{t('ecommerceStores')}</span>
                 <div className="text-left sm:text-right">
                   <span className="text-gray-900 font-semibold">80,000 – 150,000 NOK</span>
                   <span className="text-gray-400 text-sm ml-2">/ 5-8 weeks</span>
@@ -272,7 +271,7 @@ export default function WebsiteDevelopmentPage() {
 
             <div className="liquid-glass-card p-6 rounded-xl">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <span className="text-gray-700 font-medium">Custom web applications</span>
+                <span className="text-gray-700 font-medium">{t('customWebApps')}</span>
                 <div className="text-left sm:text-right">
                   <span className="text-gray-900 font-semibold">150,000+ NOK</span>
                   <span className="text-gray-400 text-sm ml-2">/ 8-12+ weeks</span>
@@ -284,10 +283,10 @@ export default function WebsiteDevelopmentPage() {
           {/* The Offer */}
           <div className="liquid-glass-service-card p-6 sm:p-10 rounded-2xl relative overflow-hidden">
             <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-emerald-100 text-emerald-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
-              Limited Offer
+              {t('limitedOffer')}
             </div>
 
-            <h3 className="text-xl sm:text-2xl font-bold mb-2 mt-8 sm:mt-0">This project price</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-2 mt-8 sm:mt-0">{t('thisProjectPrice')}</h3>
 
             <div className="flex flex-col sm:flex-row sm:items-end gap-2 sm:gap-4 mb-4">
               <span className="text-4xl sm:text-5xl font-bold text-gray-900">15,000 NOK</span>
@@ -295,14 +294,13 @@ export default function WebsiteDevelopmentPage() {
             </div>
 
             <p className="text-gray-500 mb-6 leading-relaxed text-sm sm:text-base">
-              <strong>Reason for discount:</strong> Limited December availability and focus on fewer high-quality
-              projects.
+              <strong>{t('reasonForDiscount')}</strong> {t('decemberAvailability')}
             </p>
 
             <div className="liquid-glass-badge inline-flex items-start sm:items-center gap-2 px-3 sm:px-4 py-2 rounded-full">
               <span className="w-2 h-2 bg-amber-500 rounded-full flex-shrink-0 mt-1.5 sm:mt-0"></span>
               <span className="text-xs sm:text-sm font-medium text-amber-700">
-                Only 2 slots available. Once filled, pricing returns to normal.
+                {t('onlySlots')}
               </span>
             </div>
           </div>

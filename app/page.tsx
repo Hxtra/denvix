@@ -377,9 +377,9 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/website-development">
               <ServiceCard
-                discount="-50% OFF"
-                title="Website Development"
-                description="Full-scale custom website built with React/Next.js. Perfect for businesses needing a robust online presence."
+                discount={t('discountOff')}
+                title={t('websiteDevelopmentTitle')}
+                description={t('websiteDevelopmentDesc')}
                 originalPrice="NOK 35,000"
                 salePrice="NOK 15,000"
                 slotsLeft={2}
@@ -387,9 +387,9 @@ export default function Home() {
             </Link>
             <Link href="/landing-page-dev">
               <ServiceCard
-                discount="-50% OFF"
-                title="Landing Page Dev"
-                description="High-conversion single-page site designed to capture leads and drive sales instantly."
+                discount={t('discountOff')}
+                title={t('landingPageDevTitle')}
+                description={t('landingPageDevDesc')}
                 originalPrice="NOK 15,000"
                 salePrice="NOK 7,500"
                 slotsLeft={4}
@@ -397,9 +397,9 @@ export default function Home() {
             </Link>
             <Link href="/website-maintenance">
               <ServiceCard
-                discount="-50% OFF"
-                title="Website Maintenance"
-                description="Expert troubleshooting, bug fixes, and performance optimization for existing sites."
+                discount={t('discountOff')}
+                title={t('websiteMaintenanceTitle')}
+                description={t('websiteMaintenanceDesc')}
                 originalPrice="NOK 5,000"
                 salePrice="NOK 2,500"
                 slotsLeft={5}
@@ -407,9 +407,9 @@ export default function Home() {
             </Link>
             <Link href="/responsive-redesign">
               <ServiceCard
-                discount="-50% OFF"
-                title="Responsive Redesign"
-                description="Modernize your legacy site to look perfect on all mobile devices and tablets."
+                discount={t('discountOff')}
+                title={t('responsiveRedesignTitle')}
+                description={t('responsiveRedesignDesc')}
                 originalPrice="NOK 12,000"
                 salePrice="NOK 6,000"
                 slotsLeft={3}

@@ -134,6 +134,49 @@ export const translations = {
     landingPageDevelopment: 'Landing Page Utvikling',
     landingPageSlots: 'Landing page-plasser tilgjengelig',
     requestLandingPageOffer: 'Be om landing page-tilbud',
+    
+    // Service Cards
+    discountOff: '-50% AV',
+    websiteDevelopmentTitle: 'Nettstedsutvikling',
+    websiteDevelopmentDesc: 'Fullskala tilpasset nettsted bygget med React/Next.js. Perfekt for bedrifter som trenger en robust online tilstedeværelse.',
+    landingPageDevTitle: 'Landing Page Utvikling',
+    landingPageDevDesc: 'Høykontrastert ensidig nettsted designet for å fange leads og drive salg umiddelbart.',
+    websiteMaintenanceTitle: 'Nettstedsvartaking',
+    websiteMaintenanceDesc: 'Ekspertfeilsøking, feilretting og ytelsesoptimalisering for eksisterende nettsteder.',
+    responsiveRedesignTitle: 'Responsiv redesign',
+    responsiveRedesignDesc: 'Moderniser ditt eldre nettsted for å se perfekt ut på alle mobile enheter og tablets.',
+    
+    // What's Included Section
+    whatIncluded: 'Hva som er inkludert.',
+    customUiUx: 'Tilpasset UI og UX-design',
+    reactNextjs: 'React og Next.js utvikling',
+    mobileFirst: 'Mobilførst responsive layout',
+    seoReady: 'SEO-klar struktur',
+    gdprFriendly: 'GDPR-vennlig oppsett',
+    cleanCode: 'Ren vedlikeholdbar kodebase',
+    postLaunchSupport: '30 dagers post-launch support',
+    
+    // Process & Timeline Section
+    processTimeline: 'Prosess og tidslinje.',
+    week1: 'Uke 1',
+    week1Desc: 'Strategi, struktur og designretning. Vi forstår virksomheten din og planlegger den perfekte nettstedsarkitekturen.',
+    week2: 'Uke 2',
+    week2Desc: 'Utvikling og implementering. Ditt nettsted tar form med ren kode og premiumdesign.',
+    week3: 'Uke 3',
+    week3Desc: 'Testing, refinement og lansering. Vi polerer hver detalj og distribuerer nettstedet ditt live.',
+    transparentDelivery: 'Transparent levering. Rolig prosess. Ingen overraskelser.',
+    
+    // Pricing Section
+    typicalCosts: 'Typiske kostnader og tidslinjer i Norge.',
+    whatBusinessesPay: 'Hva norske bedrifter typisk betaler for nettstedsutvikling.',
+    basicWebsites: 'Grunnleggende forretningsnettsted',
+    ecommerceStores: 'E-handel-butikker',
+    customWebApps: 'Tilpassede nettapplikasjoner',
+    limitedOffer: 'Begrenset tilbud',
+    thisProjectPrice: 'Denne prosjektprisen',
+    reasonForDiscount: 'Årsak til rabatt:',
+    decemberAvailability: 'Begrenset desembertilgjengelighet og fokus på færre høykvalitetsprosjekter.',
+    onlySlots: 'Bare 2 plasser tilgjengelig. Når plassene er fylt, går prisene tilbake til normalt.',
   },
   en: {
     // Language Selector
@@ -270,6 +313,49 @@ export const translations = {
     landingPageDevelopment: 'Landing Page Development',
     landingPageSlots: 'Landing Page Slots Available',
     requestLandingPageOffer: 'Request Landing Page Development Offer',
+    
+    // Service Cards
+    discountOff: '-50% OFF',
+    websiteDevelopmentTitle: 'Website Development',
+    websiteDevelopmentDesc: 'Full-scale custom website built with React/Next.js. Perfect for businesses needing a robust online presence.',
+    landingPageDevTitle: 'Landing Page Dev',
+    landingPageDevDesc: 'High-conversion single-page site designed to capture leads and drive sales instantly.',
+    websiteMaintenanceTitle: 'Website Maintenance',
+    websiteMaintenanceDesc: 'Expert troubleshooting, bug fixes, and performance optimization for existing sites.',
+    responsiveRedesignTitle: 'Responsive Redesign',
+    responsiveRedesignDesc: 'Modernize your legacy site to look perfect on all mobile devices and tablets.',
+    
+    // What's Included Section
+    whatIncluded: 'What is included.',
+    customUiUx: 'Custom UI and UX design',
+    reactNextjs: 'React and Next.js development',
+    mobileFirst: 'Mobile-first responsive layout',
+    seoReady: 'SEO-ready structure',
+    gdprFriendly: 'GDPR-friendly setup',
+    cleanCode: 'Clean maintainable codebase',
+    postLaunchSupport: '30 days post-launch support',
+    
+    // Process & Timeline Section
+    processTimeline: 'Process and timeline.',
+    week1: 'Week 1',
+    week1Desc: 'Strategy, structure, and design direction. We understand your business and plan the perfect website architecture.',
+    week2: 'Week 2',
+    week2Desc: 'Development and implementation. Your website takes shape with clean code and premium design.',
+    week3: 'Week 3',
+    week3Desc: 'Testing, refinement, and launch. We polish every detail and deploy your website live.',
+    transparentDelivery: 'Transparent delivery. Calm process. No surprises.',
+    
+    // Pricing Section
+    typicalCosts: 'Typical Costs and Timelines in Norway.',
+    whatBusinessesPay: 'What Norwegian businesses typically pay for web development.',
+    basicWebsites: 'Basic business websites',
+    ecommerceStores: 'E-commerce stores',
+    customWebApps: 'Custom web applications',
+    limitedOffer: 'Limited Offer',
+    thisProjectPrice: 'This project price',
+    reasonForDiscount: 'Reason for discount:',
+    decemberAvailability: 'Limited December availability and focus on fewer high-quality projects.',
+    onlySlots: 'Only 2 slots available. Once filled, pricing returns to normal.',
   },
 }
 
