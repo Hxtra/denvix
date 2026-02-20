@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { LanguageSelector } from "@/app/components/LanguageSelector"
 import {
   Clock,
   Globe,
@@ -66,12 +67,15 @@ export default function Home() {
               Contact
             </a>
           </nav>
-          <a
-            href="#contact"
-            className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
-          >
-            Get in Touch
-          </a>
+          <div className="flex items-center gap-4">
+            <LanguageSelector />
+            <a
+              href="#contact"
+              className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+            >
+              Get in Touch
+            </a>
+          </div>
         </div>
       </header>
 
