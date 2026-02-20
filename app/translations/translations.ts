@@ -177,6 +177,39 @@ export const translations = {
     reasonForDiscount: 'Årsak til rabatt:',
     decemberAvailability: 'Begrenset desembertilgjengelighet og fokus på færre høykvalitetsprosjekter.',
     onlySlots: 'Bare 2 plasser tilgjengelig. Når plassene er fylt, går prisene tilbake til normalt.',
+    
+    // Imagine Section
+    imagineHeading: 'Se for deg din neste klient besøker nettstedet ditt.',
+    imagineP1: 'Siden lastes øyeblikkelig. Ingen venting. Ingen spinner-ikoner. Budskapet ditt er klart fra første sekund. Tillit etableres før de engang begynner å scrolle.',
+    imagineP2: 'Virksomheten din ser seriøs ut. Profesjonell. Moderne. Den slags bedrift de ønsker å jobbe med. Den slags bedrift de kan stole på med pengene sine.',
+    imagineP3: 'Det første inntrykket blir til en samtale. Samtalen blir til en klient. Klienten blir til inntekt. Det er det et ordentlig nettsted gjør for virksomheten din.',
+    
+    // What This Website Does
+    whatWebsiteDoes: 'Hva dette nettstedet gjør for virksomheten din.',
+    trust: 'Tillit',
+    trustDesc: 'Profesjonelt design signaliserer troverdighet. Besøkende tror på virksomheten din før de leser ett eneste ord.',
+    speed: 'Hastighet',
+    speedDesc: 'Lyn-rask lastetid holder besøkende engasjert. Ingen venter på sakte nettsteder lenger.',
+    clarity: 'Klarhet',
+    clarityDesc: 'Klart budskap og intuitiv navigasjon leder besøkende til handling. Ingen forvirring. Ingen friksjon.',
+    growthReadiness: 'Vekstberedskap',
+    growthReadinessDesc: 'Bygget for å vokse med virksomheten din. Legg til funksjoner, sider og funksjonalitet etter hvert som du vokser.',
+    
+    // Who This Is For Section
+    whoThisIsFor: 'Hvem dette er for',
+    whoThisIsNotFor: 'Hvem dette ikke er for',
+    norwegianSmallBusinesses: 'Små norske bedrifter',
+    startups: 'Oppstartsbedrifter',
+    consultants: 'Konsulenter og tjenesteleverandører',
+    brandsWantSerious: 'Merker som ønsker å se seriøse og moderne ut på nett',
+    quickFakeWebsites: 'Rask falske nettsteder',
+    unlimitedRevisions: 'Ubegrensede revisjoner',
+    rushedBuilds: 'Forhastede bygg',
+    
+    // Final CTA Section
+    noCalls: 'Ingen samtaler. Intet press.',
+    justConversation: 'Bare en samtale.',
+    requestWebsiteDevelopmentOffer: 'Be om nettstedsutvikling-tilbud',
   },
   en: {
     // Language Selector
@@ -356,6 +389,39 @@ export const translations = {
     reasonForDiscount: 'Reason for discount:',
     decemberAvailability: 'Limited December availability and focus on fewer high-quality projects.',
     onlySlots: 'Only 2 slots available. Once filled, pricing returns to normal.',
+    
+    // Imagine Section
+    imagineHeading: 'Imagine your next client visits your website.',
+    imagineP1: 'The page loads instantly. No waiting. No spinning icons. Your message is clear from the first second. Trust is established before they even scroll.',
+    imagineP2: 'Your business looks serious. Professional. Modern. The kind of company they want to work with. The kind of company they can trust with their money.',
+    imagineP3: 'That first impression turns into a conversation. The conversation turns into a client. The client turns into revenue. This is what a proper website does for your business.',
+    
+    // What This Website Does
+    whatWebsiteDoes: 'What this website does for your business.',
+    trust: 'Trust',
+    trustDesc: 'Professional design signals credibility. Visitors believe in your business before reading a single word.',
+    speed: 'Speed',
+    speedDesc: 'Lightning-fast load times keep visitors engaged. No one waits for slow websites anymore.',
+    clarity: 'Clarity',
+    clarityDesc: 'Clear messaging and intuitive navigation guide visitors to take action. No confusion. No friction.',
+    growthReadiness: 'Growth Readiness',
+    growthReadinessDesc: 'Built to scale with your business. Add features, pages, and functionality as you grow.',
+    
+    // Who This Is For Section
+    whoThisIsFor: 'Who this is for',
+    whoThisIsNotFor: 'Who this is not for',
+    norwegianSmallBusinesses: 'Norwegian small businesses',
+    startups: 'Startups',
+    consultants: 'Consultants and service providers',
+    brandsWantSerious: 'Brands who want to look serious and modern online',
+    quickFakeWebsites: 'Quick fake websites',
+    unlimitedRevisions: 'Unlimited revisions',
+    rushedBuilds: 'Rushed builds',
+    
+    // Final CTA Section
+    noCalls: 'No calls. No pressure.',
+    justConversation: 'Just a conversation.',
+    requestWebsiteDevelopmentOffer: 'Request Website Development Offer',
   },
 }
 

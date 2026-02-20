@@ -76,21 +76,18 @@ export default function WebsiteDevelopmentPage() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-            Imagine your next client visits your website.
+            {t('imagineHeading')}
           </h2>
 
           <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
             <p>
-              The page loads instantly. No waiting. No spinning icons. Your message is clear from the first second.
-              Trust is established before they even scroll.
+              {t('imagineP1')}
             </p>
             <p>
-              Your business looks serious. Professional. Modern. The kind of company they want to work with. The kind of
-              company they can trust with their money.
+              {t('imagineP2')}
             </p>
             <p>
-              That first impression turns into a conversation. The conversation turns into a client. The client turns
-              into revenue. This is what a proper website does for your business.
+              {t('imagineP3')}
             </p>
           </div>
         </div>
@@ -100,7 +97,7 @@ export default function WebsiteDevelopmentPage() {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">
-            What this website does for your business.
+            {t('whatWebsiteDoes')}
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -108,9 +105,9 @@ export default function WebsiteDevelopmentPage() {
               <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Trust</h3>
+              <h3 className="text-xl font-semibold mb-3">{t('trust')}</h3>
               <p className="text-gray-500 leading-relaxed">
-                Professional design signals credibility. Visitors believe in your business before reading a single word.
+                {t('trustDesc')}
               </p>
             </div>
 
@@ -118,9 +115,9 @@ export default function WebsiteDevelopmentPage() {
               <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6">
                 <Zap className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Speed</h3>
+              <h3 className="text-xl font-semibold mb-3">{t('speed')}</h3>
               <p className="text-gray-500 leading-relaxed">
-                Lightning-fast load times keep visitors engaged. No one waits for slow websites anymore.
+                {t('speedDesc')}
               </p>
             </div>
 
@@ -136,9 +133,9 @@ export default function WebsiteDevelopmentPage() {
                   <path d="M12 3v18M3 12h18" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Clarity</h3>
+              <h3 className="text-xl font-semibold mb-3">{t('clarity')}</h3>
               <p className="text-gray-500 leading-relaxed">
-                Clear messaging and intuitive navigation guide visitors to take action. No confusion. No friction.
+                {t('clarityDesc')}
               </p>
             </div>
 
@@ -154,9 +151,9 @@ export default function WebsiteDevelopmentPage() {
                   <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Growth Readiness</h3>
+              <h3 className="text-xl font-semibold mb-3">{t('growthReadiness')}</h3>
               <p className="text-gray-500 leading-relaxed">
-                Built to scale with your business. Add features, pages, and functionality as you grow.
+                {t('growthReadinessDesc')}
               </p>
             </div>
           </div>
@@ -315,14 +312,14 @@ export default function WebsiteDevelopmentPage() {
             <div>
               <h2 className="text-2xl font-bold tracking-tight mb-8 flex items-center gap-3">
                 <Users className="w-6 h-6 text-emerald-600" />
-                Who this is for
+                {t('whoThisIsFor')}
               </h2>
               <div className="space-y-4">
                 {[
-                  "Norwegian small businesses",
-                  "Startups",
-                  "Consultants and service providers",
-                  "Brands who want to look serious and modern online",
+                  t('norwegianSmallBusinesses'),
+                  t('startups'),
+                  t('consultants'),
+                  t('brandsWantSerious'),
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -338,10 +335,10 @@ export default function WebsiteDevelopmentPage() {
             <div>
               <h2 className="text-2xl font-bold tracking-tight mb-8 flex items-center gap-3">
                 <X className="w-6 h-6 text-red-500" />
-                Who this is not for
+                {t('whoThisIsNotFor')}
               </h2>
               <div className="space-y-4">
-                {["Quick fake websites", "Unlimited revisions", "Rushed builds"].map((item, index) => (
+                {[t('quickFakeWebsites'), t('unlimitedRevisions'), t('rushedBuilds')].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-5 h-5 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <X className="w-3 h-3 text-red-500" />
@@ -358,14 +355,14 @@ export default function WebsiteDevelopmentPage() {
       {/* Final CTA Section */}
       <section className="py-20 px-6 bg-[#111111]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">No calls. No pressure.</h2>
-          <p className="text-xl text-gray-400 mb-10">Just a conversation.</p>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">{t('noCalls')}</h2>
+          <p className="text-xl text-gray-400 mb-10">{t('justConversation')}</p>
 
           <a
             href="#contact"
             className="inline-flex items-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all hover:scale-[1.02]"
           >
-            Request Website Development Offer
+            {t('requestWebsiteDevelopmentOffer')}
           </a>
         </div>
       </section>
@@ -380,14 +377,14 @@ export default function WebsiteDevelopmentPage() {
             </Link>
             <div className="flex items-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Privacy Policy
+                {t('privacyPolicy')}
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Terms of Service
+                {t('termsOfService')}
               </a>
             </div>
           </div>
-          <p className="text-gray-500 text-sm mt-6">© 2025 Devnix. Built for Norway.</p>
+          <p className="text-gray-500 text-sm mt-6">{t('copyright')}</p>
         </div>
       </footer>
     </div>
