@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Check, Clock, ArrowLeft, Smartphone, Zap, Target, BarChart3 } from "lucide-react"
+import { useTranslation } from "@/app/hooks/useTranslation"
 
 export default function LandingPageDevOffer() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     setIsLoaded(true)
@@ -30,7 +32,7 @@ export default function LandingPageDevOffer() {
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            {t('backToHome')}
           </Link>
         </div>
       </header>
@@ -69,7 +71,7 @@ export default function LandingPageDevOffer() {
             href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
           >
-            Request Landing Page Development Offer
+            {t('requestLandingPageOffer')}
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>
@@ -349,7 +351,7 @@ export default function LandingPageDevOffer() {
             href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
           >
-            Request Landing Page Development Offer
+            {t('requestLandingPageOffer')}
             <ArrowRight className="w-4 h-4" />
           </a>
 

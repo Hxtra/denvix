@@ -356,7 +356,7 @@ export default function Home() {
           {/* Flash Sale Badge */}
           <div className="liquid-glass-flash-badge inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6">
             <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-            <span className="text-sm font-semibold text-emerald-700">Flash Sale Active</span>
+            <span className="text-sm font-semibold text-emerald-700">{t('flashSaleActive')}</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">{t('premiumServices')}</h2>
@@ -368,9 +368,9 @@ export default function Home() {
 
           {/* Offer Status */}
           <div className="liquid-glass-status inline-flex items-center gap-4 px-6 py-3 rounded-full mb-12">
-            <span className="text-sm text-gray-600">Offer Status</span>
+            <span className="text-sm text-gray-600">{t('offerStatus')}</span>
             <span className="text-sm font-semibold">{currentMonth} Slots</span>
-            <span className="text-sm font-semibold text-amber-600">Closing Soon</span>
+            <span className="text-sm font-semibold text-amber-600">{t('closingSoon')}</span>
           </div>
 
           {/* Service Cards */}

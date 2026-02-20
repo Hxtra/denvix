@@ -101,6 +101,39 @@ export const translations = {
     
     // Contact Description
     contactDescription: 'Klar til å heve din digitale tilstedeværelse? Kontakt oss i dag for å kreve din ',
+    
+    // Flash Sale & Offer Status
+    flashSaleActive: 'Flash salg aktiv',
+    offerStatus: 'Tilbudsstatus',
+    closingSoon: 'Lukker snart',
+    
+    // Service Pages General
+    backToHome: 'Tilbake til hjem',
+    only2SlotsLeft: 'Bare 2 plasser igjen',
+    availableSlots: 'plasser tilgjengelig',
+    
+    // Website Development Page
+    websiteDevelopment: 'Nettstedsutvikling',
+    forNorwegianBusinesses: 'for norske bedrifter.',
+    December: 'desember',
+    deliveryWindow: 'leveringsvindu',
+    requestOffer: 'Be om nettstedsutvikling-tilbud',
+    webDevelopmentPageDesc: 'Tilpasset høyytelses nettsted bygget med React og Next.js. Rask, sikker, GDPR-klar.',
+    
+    // Website Maintenance Page
+    websiteMaintenance: 'Nettstedsvartaking',
+    maintenanceSlots: 'Vedlikeholdplasser tilgjengelig',
+    requestMaintenanceOffer: 'Be om vedlikeholdstilbud',
+    
+    // Responsive Redesign Page
+    responsiveRedesign: 'Responsiv redesign',
+    redesignSlots: 'Redesignplasser tilgjengelig',
+    requestRedesignOffer: 'Be om redesigntilbud',
+    
+    // Landing Page Dev
+    landingPageDevelopment: 'Landing Page Utvikling',
+    landingPageSlots: 'Landing page-plasser tilgjengelig',
+    requestLandingPageOffer: 'Be om landing page-tilbud',
   },
   en: {
     // Language Selector
@@ -204,6 +237,39 @@ export const translations = {
     
     // Contact Description
     contactDescription: 'Ready to elevate your digital presence? Reach out today to claim your ',
+    
+    // Flash Sale & Offer Status
+    flashSaleActive: 'Flash Sale Active',
+    offerStatus: 'Offer Status',
+    closingSoon: 'Closing Soon',
+    
+    // Service Pages General
+    backToHome: 'Back to Home',
+    only2SlotsLeft: 'Only 2 Slots Left',
+    availableSlots: 'Slots Available',
+    
+    // Website Development Page
+    websiteDevelopment: 'Website Development',
+    forNorwegianBusinesses: 'for Norwegian Businesses.',
+    December: 'December',
+    deliveryWindow: 'delivery window',
+    requestOffer: 'Request Website Development Offer',
+    webDevelopmentPageDesc: 'Custom high-performance website built with React and Next.js. Fast, secure, GDPR-ready.',
+    
+    // Website Maintenance Page
+    websiteMaintenance: 'Website Maintenance',
+    maintenanceSlots: '5 Maintenance Slots Available',
+    requestMaintenanceOffer: 'Request Maintenance Support',
+    
+    // Responsive Redesign Page
+    responsiveRedesign: 'Responsive Redesign',
+    redesignSlots: 'Redesign Slots Available',
+    requestRedesignOffer: 'Request Responsive Redesign Offer',
+    
+    // Landing Page Dev
+    landingPageDevelopment: 'Landing Page Development',
+    landingPageSlots: 'Landing Page Slots Available',
+    requestLandingPageOffer: 'Request Landing Page Development Offer',
   },
 }
 

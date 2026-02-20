@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Check, Clock, Users, XCircle, Smartphone, Monitor, Tablet } from "lucide-react"
+import { useTranslation } from "@/app/hooks/useTranslation"
 
 export default function ResponsiveRedesignPage() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     setIsLoaded(true)
@@ -30,7 +32,7 @@ export default function ResponsiveRedesignPage() {
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            {t('backToHome')}
           </Link>
         </div>
       </header>
@@ -60,7 +62,7 @@ export default function ResponsiveRedesignPage() {
             href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] text-lg"
           >
-            Request Responsive Redesign Offer
+            {t('requestRedesignOffer')}
           </a>
         </div>
       </section>
@@ -361,7 +363,7 @@ export default function ResponsiveRedesignPage() {
             href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-10 py-5 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] text-lg"
           >
-            Request Responsive Redesign Offer
+            {t('requestRedesignOffer')}
           </a>
 
           <p className="text-gray-400 text-sm mt-6">

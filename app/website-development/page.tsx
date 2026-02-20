@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Clock, Shield, Zap, Check, Users, X, MessageCircle } from "lucide-react"
+import { useTranslation } from "@/app/hooks/useTranslation"
 
 export default function WebsiteDevelopmentPage() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     setIsLoaded(true)
@@ -31,7 +33,7 @@ export default function WebsiteDevelopmentPage() {
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            {t('backToHome')}
           </Link>
         </div>
       </header>
@@ -42,22 +44,22 @@ export default function WebsiteDevelopmentPage() {
           {/* Availability Badge */}
           <div className="inline-flex items-center gap-2 mb-8 liquid-glass-badge px-4 py-2 rounded-full">
             <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-            <span className="text-xs font-semibold tracking-wider uppercase text-red-600">Only 2 Slots Left</span>
+            <span className="text-xs font-semibold tracking-wider uppercase text-red-600">{t('only2SlotsLeft')}</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-gray-900">Website Development</h1>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-gray-900">{t('websiteDevelopment')}</h1>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-300 mb-6">
-            for Norwegian Businesses.
+            {t('forNorwegianBusinesses')}
           </h2>
 
           <p className="text-xl text-gray-500 mb-4 max-w-2xl leading-relaxed">
-            Custom high-performance website built with React and Next.js. Fast, secure, GDPR-ready.
+            {t('webDevelopmentPageDesc')}
           </p>
 
           {/* Timeframe */}
           <div className="flex items-center gap-2 text-gray-400 mb-8">
             <Clock className="w-4 h-4" />
-            <span className="text-sm">December delivery window</span>
+            <span className="text-sm">{t('December')} {t('deliveryWindow')}</span>
           </div>
 
           {/* Primary CTA */}
@@ -65,7 +67,7 @@ export default function WebsiteDevelopmentPage() {
             href="#contact"
             className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
           >
-            Request Website Development Offer
+            {t('requestOffer')}
           </a>
         </div>
       </section>

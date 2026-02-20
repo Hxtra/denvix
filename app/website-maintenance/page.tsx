@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Check, Clock, Shield, Zap, Wrench, RefreshCw, AlertCircle } from "lucide-react"
+import { useTranslation } from "@/app/hooks/useTranslation"
 
 export default function WebsiteMaintenancePage() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     setIsLoaded(true)
@@ -32,7 +34,7 @@ export default function WebsiteMaintenancePage() {
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            {t('backToHome')}
           </Link>
         </div>
       </header>
@@ -44,7 +46,7 @@ export default function WebsiteMaintenancePage() {
           <div className="inline-flex items-center gap-2 mb-8 liquid-glass-badge px-4 py-2 rounded-full">
             <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
             <span className="text-xs font-semibold tracking-wider uppercase text-amber-700">
-              5 Maintenance Slots Available
+              {t('maintenanceSlots')}
             </span>
           </div>
 
