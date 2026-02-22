@@ -663,8 +663,7 @@ function ServiceCard({
       </div>
 
       {/* CLICK → Button Indicator */}
-      <div className="mt-auto pt-6 border-t border-gray-200 flex items-center justify-between">
-        <span className="text-xs font-medium text-gray-400">This is a button</span>
+      <div className="mt-auto pt-6 border-t border-gray-200 flex items-center justify-end">
         <span className="text-sm font-bold text-gray-600 group-hover:text-gray-900 transition-colors flex items-center gap-1">
           CLICK <ChevronRight className="w-4 h-4" />
         </span>
