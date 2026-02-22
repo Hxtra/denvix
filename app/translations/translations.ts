@@ -405,6 +405,26 @@ export const translations = {
     readyToLookModernCTA: 'Klare til å se moderne ut?',
     noCalls: 'Ingen samtaler. Intet trykk. Bare en samtale.',
     clickToStartConversation: 'Klikk for å starte en samtale på Messenger. Vi diskuterer nåværende nettsted og hvordan vi kan hjelpe.',
+    
+    // Scarcity & Service Card Translations
+    slotsLeft: 'plasser igjen',
+    decemberDelivery: 'desember levering',
+    exploreOtherServices: 'Utforsk andre tjenester',
+    limitedAvailability: 'Begrenset tilgjengelighet',
+    slotsLeftDecemberScarcity: '3 plasser igjen i desember',
+    onceGonePrice: 'Når de er borte, går prisingen tilbake til normal. Dette er en sjelden mulighet til å modernisere til halv pris.',
+    
+    // Cross-Service Navigation
+    exploreWebsiteDevelopment: 'Utforsk nettstedsutvikling',
+    exploreLandingPageDev: 'Utforsk landing page utvikling',
+    exploreWebsiteMaintenance: 'Utforsk nettstedsvedlikehold',
+    exploreResponsiveRedesign: 'Utforsk responsiv redesign',
+    
+    // Service Descriptions for Buttons
+    websiteDevelopmentShort: 'Full nettstedsutvikling fra bunnen',
+    landingPageDevShort: 'Høykonverterende landing pages',
+    websiteMaintenanceShort: 'Pågående nettstedsstøtte',
+    responsiveRedesignShort: 'Modernisering for mobil',
   },
   en: {
     // Language Selector
@@ -746,6 +766,26 @@ export const translations = {
     noPressureNoCallsMaintenance: 'No Pressure. No Calls. Just a Conversation.',
     tellUsWhatsWrong: 'Tell us what\'s going on with your website. We\'ll let you know if we can help, and what it would take. That\'s it.',
     responseTimeBusinessHours: 'Response time: Under 2 hours during business hours.',
+    
+    // Scarcity & Service Card Translations
+    slotsLeft: 'slots left',
+    decemberDelivery: 'December delivery',
+    exploreOtherServices: 'Explore Other Services',
+    limitedAvailability: 'Limited Availability',
+    slotsLeftDecemberScarcity: '3 slots left in December',
+    onceGonePrice: 'Once gone, the price goes back to normal. This is a rare opportunity to modernize at half price.',
+    
+    // Cross-Service Navigation
+    exploreWebsiteDevelopment: 'Explore Website Development',
+    exploreLandingPageDev: 'Explore Landing Page Dev',
+    exploreWebsiteMaintenance: 'Explore Website Maintenance',
+    exploreResponsiveRedesign: 'Explore Responsive Redesign',
+    
+    // Service Descriptions for Buttons
+    websiteDevelopmentShort: 'Full website development from scratch',
+    landingPageDevShort: 'High-converting landing pages',
+    websiteMaintenanceShort: 'Ongoing website support',
+    responsiveRedesignShort: 'Mobile-first modernization',
   },
 }
 

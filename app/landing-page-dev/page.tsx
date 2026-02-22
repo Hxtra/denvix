@@ -356,6 +356,57 @@ export default function LandingPageDevOffer() {
         </div>
       </section>
 
+      {/* Cross-Service Navigation Section */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">{t('exploreOtherServices')}</h2>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Website Development */}
+            <Link href="/website-development">
+              <div className="liquid-glass-service-card p-8 rounded-2xl h-full hover:scale-[1.02] transition-transform cursor-pointer">
+                <div className="mb-4">
+                  <span className="text-red-600 font-semibold text-sm">-50% OFF</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{t('websiteDevelopmentTitle')}</h3>
+                <p className="text-gray-500 text-sm mb-6">{t('websiteDevelopmentShort')}</p>
+                <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2 w-fit">
+                  <span className="text-xs font-semibold text-orange-700">2 SLOTS LEFT</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Website Maintenance */}
+            <Link href="/website-maintenance">
+              <div className="liquid-glass-service-card p-8 rounded-2xl h-full hover:scale-[1.02] transition-transform cursor-pointer">
+                <div className="mb-4">
+                  <span className="text-amber-600 font-semibold text-sm">-50% OFF</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{t('websiteMaintenanceTitle')}</h3>
+                <p className="text-gray-500 text-sm mb-6">{t('websiteMaintenanceShort')}</p>
+                <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2 w-fit">
+                  <span className="text-xs font-semibold text-orange-700">5 SLOTS LEFT</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Responsive Redesign */}
+            <Link href="/responsive-redesign">
+              <div className="liquid-glass-service-card p-8 rounded-2xl h-full hover:scale-[1.02] transition-transform cursor-pointer">
+                <div className="mb-4">
+                  <span className="text-emerald-600 font-semibold text-sm">-50% OFF</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{t('responsiveRedesignTitle')}</h3>
+                <p className="text-gray-500 text-sm mb-6">{t('responsiveRedesignShort')}</p>
+                <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2 w-fit">
+                  <span className="text-xs font-semibold text-orange-700">3 SLOTS LEFT</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-8 px-6 bg-[#111111] border-t border-gray-800">
         <div className="max-w-6xl mx-auto">
