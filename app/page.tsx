@@ -642,7 +642,7 @@ function ServiceCard({
   slotsLeft: number
 }) {
   return (
-    <div className="liquid-glass-service-card p-8 rounded-2xl relative overflow-hidden group transition-all hover:scale-[1.01]">
+    <div className="liquid-glass-service-card p-8 rounded-2xl relative overflow-hidden group transition-all hover:scale-[1.01] hover:shadow-lg cursor-pointer border-2 border-transparent hover:border-gray-300 flex flex-col h-full">
       {/* Discount Badge */}
       <div className="absolute top-6 right-6 bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-semibold">
         {discount}
@@ -657,9 +657,17 @@ function ServiceCard({
       </div>
 
       {/* Scarcity Badge - Eye-Catching */}
-      <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-4 py-2 flex items-center gap-2 w-fit">
+      <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-4 py-2 flex items-center gap-2 w-fit mb-6">
         <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
         <span className="text-xs font-semibold text-orange-700">{slotsLeft} SLOTS LEFT · DECEMBER DELIVERY</span>
+      </div>
+
+      {/* CLICK → Button Indicator */}
+      <div className="mt-auto pt-6 border-t border-gray-200 flex items-center justify-between">
+        <span className="text-xs font-medium text-gray-400">This is a button</span>
+        <span className="text-sm font-bold text-gray-600 group-hover:text-gray-900 transition-colors flex items-center gap-1">
+          CLICK <ChevronRight className="w-4 h-4" />
+        </span>
       </div>
     </div>
   )
