@@ -368,49 +368,92 @@ export default function WebsiteMaintenancePage() {
       </section>
 
       {/* Cross-Service Navigation Section */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">{t('exploreOtherServices')}</h2>
+          <div className="text-center mb-16">
+            <p className="text-gray-600 text-sm font-semibold uppercase tracking-wide mb-3">Need Something Else?</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">{t('exploreOtherServices')}</h2>
+            <p className="text-gray-500 mt-4 max-w-xl mx-auto">Check out our other services to find the perfect solution for your business needs</p>
+          </div>
           
           <div className="grid md:grid-cols-3 gap-6">
             {/* Website Development */}
             <Link href="/website-development">
-              <div className="liquid-glass-service-card p-8 rounded-2xl h-full hover:scale-[1.02] transition-transform cursor-pointer">
-                <div className="mb-4">
-                  <span className="text-red-600 font-semibold text-sm">-50% OFF</span>
+              <div className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 h-full hover:border-red-400 hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden">
+                {/* Background gradient on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                
+                <div className="flex items-start justify-between mb-4">
+                  <span className="text-red-600 font-bold text-lg">-50% OFF</span>
+                  <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors group-hover:scale-110 duration-300">
+                    <svg className="w-4 h-4 text-red-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('websiteDevelopmentTitle')}</h3>
-                <p className="text-gray-500 text-sm mb-6">{t('websiteDevelopmentShort')}</p>
-                <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2 w-fit">
-                  <span className="text-xs font-semibold text-orange-700">2 SLOTS LEFT</span>
+                
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-red-600 transition-colors">{t('websiteDevelopmentTitle')}</h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">{t('websiteDevelopmentShort')}</p>
+                
+                <div className="flex items-center justify-between">
+                  <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
+                    <span className="text-xs font-semibold text-orange-700">2 SLOTS LEFT</span>
+                  </div>
+                  <span className="text-xs font-bold text-gray-400 group-hover:text-red-600 transition-colors uppercase tracking-wide">CLICK →</span>
                 </div>
               </div>
             </Link>
 
             {/* Landing Page Dev */}
             <Link href="/landing-page-dev">
-              <div className="liquid-glass-service-card p-8 rounded-2xl h-full hover:scale-[1.02] transition-transform cursor-pointer">
-                <div className="mb-4">
-                  <span className="text-orange-600 font-semibold text-sm">-50% OFF</span>
+              <div className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 h-full hover:border-orange-400 hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden">
+                {/* Background gradient on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                
+                <div className="flex items-start justify-between mb-4">
+                  <span className="text-orange-600 font-bold text-lg">-50% OFF</span>
+                  <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors group-hover:scale-110 duration-300">
+                    <svg className="w-4 h-4 text-orange-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('landingPageDevTitle')}</h3>
-                <p className="text-gray-500 text-sm mb-6">{t('landingPageDevShort')}</p>
-                <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2 w-fit">
-                  <span className="text-xs font-semibold text-orange-700">4 SLOTS LEFT</span>
+                
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-orange-600 transition-colors">{t('landingPageDevTitle')}</h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">{t('landingPageDevShort')}</p>
+                
+                <div className="flex items-center justify-between">
+                  <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
+                    <span className="text-xs font-semibold text-orange-700">4 SLOTS LEFT</span>
+                  </div>
+                  <span className="text-xs font-bold text-gray-400 group-hover:text-orange-600 transition-colors uppercase tracking-wide">CLICK →</span>
                 </div>
               </div>
             </Link>
 
             {/* Responsive Redesign */}
             <Link href="/responsive-redesign">
-              <div className="liquid-glass-service-card p-8 rounded-2xl h-full hover:scale-[1.02] transition-transform cursor-pointer">
-                <div className="mb-4">
-                  <span className="text-emerald-600 font-semibold text-sm">-50% OFF</span>
+              <div className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 h-full hover:border-emerald-400 hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden">
+                {/* Background gradient on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                
+                <div className="flex items-start justify-between mb-4">
+                  <span className="text-emerald-600 font-bold text-lg">-50% OFF</span>
+                  <div className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center group-hover:bg-emerald-200 transition-colors group-hover:scale-110 duration-300">
+                    <svg className="w-4 h-4 text-emerald-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{t('responsiveRedesignTitle')}</h3>
-                <p className="text-gray-500 text-sm mb-6">{t('responsiveRedesignShort')}</p>
-                <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2 w-fit">
-                  <span className="text-xs font-semibold text-orange-700">3 SLOTS LEFT</span>
+                
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-600 transition-colors">{t('responsiveRedesignTitle')}</h3>
+                <p className="text-gray-600 text-sm mb-6 leading-relaxed">{t('responsiveRedesignShort')}</p>
+                
+                <div className="flex items-center justify-between">
+                  <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
+                    <span className="text-xs font-semibold text-orange-700">3 SLOTS LEFT</span>
+                  </div>
+                  <span className="text-xs font-bold text-gray-400 group-hover:text-emerald-600 transition-colors uppercase tracking-wide">CLICK →</span>
                 </div>
               </div>
             </Link>
