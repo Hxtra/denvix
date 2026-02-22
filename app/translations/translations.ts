@@ -425,6 +425,23 @@ export const translations = {
     landingPageDevShort: 'Høykonverterende landing pages',
     websiteMaintenanceShort: 'Pågående nettstedsstøtte',
     responsiveRedesignShort: 'Modernisering for mobil',
+    
+    // Website Development Page - Pricing Table
+    weeksDelivery24: '2-4 ukers levering',
+    weeksDelivery58: '5-8 ukers levering',
+    
+    // Landing Page Dev - What You Get List
+    customHighConvertingLandingPage: 'Tilpasset høykontrastert landing page bygget med React/Next.js',
+    
+    // Website Maintenance - Not For Section
+    completeWebsiteRebuilds: 'Komplette nettstedsgjenoppbygginger',
+    
+    // Responsive Redesign - Footer & Device Names
+    privacyPolicy: 'Personvern',
+    termsOfServiceFooter: 'Vilkår for tjenesten',
+    mobile: 'Mobil',
+    tablet: 'Nettbrett',
+    desktop: 'Skrivebord',
   },
   en: {
     // Language Selector
@@ -786,6 +803,23 @@ export const translations = {
     landingPageDevShort: 'High-converting landing pages',
     websiteMaintenanceShort: 'Ongoing website support',
     responsiveRedesignShort: 'Mobile-first modernization',
+    
+    // Website Development Page - Pricing Table
+    weeksDelivery24: '2-4 weeks delivery',
+    weeksDelivery58: '5-8 weeks delivery',
+    
+    // Landing Page Dev - What You Get List
+    customHighConvertingLandingPage: 'Custom high-converting landing page built with React/Next.js',
+    
+    // Website Maintenance - Not For Section
+    completeWebsiteRebuilds: 'Complete website rebuilds',
+    
+    // Responsive Redesign - Footer & Device Names
+    privacyPolicy: 'Privacy Policy',
+    termsOfServiceFooter: 'Terms of Service',
+    mobile: 'Mobile',
+    tablet: 'Tablet',
+    desktop: 'Desktop',
   },
 }
 

@@ -251,7 +251,7 @@ export default function WebsiteDevelopmentPage() {
                 <span className="text-gray-700 font-medium">{t('basicWebsites')}</span>
                 <div className="text-left sm:text-right">
                   <span className="text-gray-900 font-semibold">30,000 – 60,000 NOK</span>
-                  <span className="text-gray-400 text-sm ml-2">/ 2-4 weeks</span>
+                  <span className="text-gray-400 text-sm ml-2">/ {t('weeksDelivery24')}</span>
                 </div>
               </div>
             </div>
@@ -261,7 +261,7 @@ export default function WebsiteDevelopmentPage() {
                 <span className="text-gray-700 font-medium">{t('ecommerceStores')}</span>
                 <div className="text-left sm:text-right">
                   <span className="text-gray-900 font-semibold">80,000 – 150,000 NOK</span>
-                  <span className="text-gray-400 text-sm ml-2">/ 5-8 weeks</span>
+                  <span className="text-gray-400 text-sm ml-2">/ {t('weeksDelivery58')}</span>
                 </div>
               </div>
             </div>

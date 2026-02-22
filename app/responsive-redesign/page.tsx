@@ -89,15 +89,15 @@ export default function ResponsiveRedesignPage() {
           <div className="mt-12 flex items-end justify-center gap-4">
             <div className="liquid-glass-card p-4 rounded-xl">
               <Smartphone className="w-8 h-8 text-gray-600" />
-              <p className="text-xs text-gray-500 mt-2">Mobile</p>
+              <p className="text-xs text-gray-500 mt-2">{t('mobile')}</p>
             </div>
             <div className="liquid-glass-card p-5 rounded-xl">
               <Tablet className="w-10 h-10 text-gray-600" />
-              <p className="text-xs text-gray-500 mt-2">Tablet</p>
+              <p className="text-xs text-gray-500 mt-2">{t('tablet')}</p>
             </div>
             <div className="liquid-glass-card p-6 rounded-xl">
               <Monitor className="w-12 h-12 text-gray-600" />
-              <p className="text-xs text-gray-500 mt-2">Desktop</p>
+              <p className="text-xs text-gray-500 mt-2">{t('desktop')}</p>
             </div>
           </div>
         </div>
@@ -464,10 +464,10 @@ export default function ResponsiveRedesignPage() {
             </Link>
             <div className="flex items-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Privacy Policy
+                {t('privacyPolicy')}
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Terms of Service
+                {t('termsOfServiceFooter')}
               </a>
             </div>
             <p className="text-gray-500 text-sm">© 2025 Devnix. Built for Norway.</p>
