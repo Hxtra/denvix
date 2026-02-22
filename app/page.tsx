@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { LanguageSelector } from "@/app/components/LanguageSelector"
+import { useTranslation } from "@/app/hooks/useTranslation"
 import {
   Clock,
   Globe,
@@ -13,13 +15,34 @@ import {
   Phone,
   Mail,
   Facebook,
-  MessageCircle,
 } from "lucide-react"
+
+// Utility function to get current month
+function getCurrentMonth() {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+  return months[new Date().getMonth()]
+}
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const [currentMonth, setCurrentMonth] = useState("")
+  const { t } = useTranslation()
 
   useEffect(() => {
+    setCurrentMonth(getCurrentMonth())
     setIsLoaded(true)
     window.scrollTo(0, 0)
   }, [])
@@ -37,85 +60,140 @@ export default function Home() {
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#work" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              Work
+              {t('work')}
             </a>
             <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              Services
+              {t('services')}
             </a>
             <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-              Contact
+              {t('contact')}
             </a>
           </nav>
-          <a
-            href="#contact"
-            className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
-          >
-            Get in Touch
-          </a>
+          <div className="flex items-center gap-4">
+            <LanguageSelector />
+            <a
+              href="#contact"
+              className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+            >
+              {t('getInTouch')}
+            </a>
+          </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6">
+      <section className="pt-32 pb-16 px-6 relative">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-xl">
-              {/* Liquid Glass Badge - Project Slots */}
-              <div className="inline-flex items-center gap-2 mb-8 liquid-glass-badge px-4 py-2 rounded-full">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Left: Text Content */}
+            <div className="max-w-2xl">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-red-50 border border-red-200">
                 <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
                 <span className="text-xs font-semibold tracking-wider uppercase text-red-600">
-                  Only 2 Project Slots Left for December
+                  {t('heroBadge')} {currentMonth}
                 </span>
               </div>
 
-              {/* Typography matching reference: Nordic (black), Precision. (italic beige), Global Impact. (red with icon) */}
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-1 text-gray-900">Nordic</h1>
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif italic tracking-tight mb-1 text-[#c9a68a]">
-                Precision.
-              </h1>
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-[#c94a4a] mb-8">
-                Global Impact.
+              {/* Main Headline */}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-gray-900 leading-[1.2]">
+                {t('heroHeadline')}
               </h1>
 
-              <p className="text-gray-500 text-lg max-w-xl mb-10 leading-relaxed">
-                We build high-performance digital experiences tailored for Norwegian businesses. Premium development,
-                transparent pricing, and direct communication.
+              {/* Description */}
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
+                {t('heroDescription')}
               </p>
 
-              <div className="flex flex-wrap items-center gap-4 mb-8">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]"
-                >
-                  Start Your Project
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-                {/* Liquid Glass Button - View Portfolio */}
-                <a
-                  href="#work"
-                  className="liquid-glass-button inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all hover:scale-[1.02]"
-                >
-                  View Portfolio
-                </a>
-              </div>
+              {/* Primary CTA Button */}
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] mb-6 shadow-lg hover:shadow-xl"
+              >
+                {t('heroButton')}
+              </a>
 
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2 text-gray-400 text-sm">
-                  <Clock className="w-4 h-4" />
-                  <span>Response time: Under 2 hours</span>
+              {/* Trust Text */}
+              <p className="text-sm text-gray-500 mb-8">
+                {t('heroTrust')}
+              </p>
+
+              {/* Rating Display */}
+              <div className="flex flex-col items-start gap-3">
+                {/* Avatars */}
+                <div className="flex items-center">
+                  <div className="relative w-20 h-8">
+                    <div className="absolute left-0 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden shadow-md">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 1" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="absolute left-5 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden shadow-md">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 2" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="absolute left-10 w-8 h-8 rounded-full bg-gray-300 border-2 border-white overflow-hidden shadow-md">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20260218-190759-o9ISQ3eW0ehJ01yyfSK83FE2Zf5EuL.jpg" alt="Client 3" className="w-full h-full object-cover" />
+                    </div>
+                  </div>
                 </div>
+
+                {/* Gold Stars */}
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <svg
+                      key={i}
+                      className="w-5 h-5 text-yellow-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+
+                {/* Rating Text */}
+                <p className="text-sm text-gray-700">
+                  <span className="font-semibold">{t('heroRated')} 4.9</span>
+                  <span className="text-gray-400"> {t('heroFrom')}</span>
+                  <span className="font-semibold"> {t('heroBusinessOwners')}</span>
+                </p>
               </div>
             </div>
 
-            <div className="hidden lg:block">
-              <div className="relative">
-                <div className="rounded-3xl overflow-hidden bg-gray-100 aspect-square">
-                  <img
-                    src="/abstract-3d-metallic-blue-and-gold-geometric-shape-new.jpg"
-                    alt="Abstract 3D metallic shapes"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+            {/* Right: 2x2 Image Grid */}
+            <div className="grid grid-cols-2 gap-3 lg:gap-4 h-fit">
+              {/* Image 1: Client Testimonial */}
+              <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] bg-gradient-to-br from-gray-50 to-gray-100 aspect-square border border-gray-200">
+                <img
+                  src="https://via.placeholder.com/250x250?text=Client+Testimonial"
+                  alt="Client testimonial screenshot"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Image 2: Website Project */}
+              <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] bg-gradient-to-br from-gray-50 to-gray-100 aspect-square border border-gray-200">
+                <img
+                  src="https://via.placeholder.com/250x250?text=Website+Project"
+                  alt="Real website project screenshot"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Image 3: Revenue Dashboard */}
+              <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] bg-gradient-to-br from-gray-50 to-gray-100 aspect-square border border-gray-200">
+                <img
+                  src="https://via.placeholder.com/250x250?text=Revenue+Dashboard"
+                  alt="Stripe revenue dashboard screenshot"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Image 4: Before/After */}
+              <div className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.05] bg-gradient-to-br from-gray-50 to-gray-100 aspect-square border border-gray-200">
+                <img
+                  src="https://via.placeholder.com/250x250?text=Before+After"
+                  alt="Website before and after comparison"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -125,7 +203,7 @@ export default function Home() {
       {/* Trusted Technologies */}
       <section className="py-12 px-6 border-t border-gray-100">
         <div className="max-w-6xl mx-auto">
-          <p className="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-6">Trusted Technologies</p>
+          <p className="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-6">{t('trustedTechnologies')}</p>
           <div className="flex flex-wrap gap-3">
             {[
               "Wise",
@@ -151,18 +229,71 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Growth & Stats Section */}
+      <section className="py-16 px-6 border-t border-gray-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-12">
+            {/* Stat 1 */}
+            <div className="flex flex-col items-start">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
+                {t('trustedHeading')}
+              </h3>
+              <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                {t('trustedDescription')}
+              </p>
+            </div>
+
+            {/* Stat 2 */}
+            <div className="flex flex-col items-start">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
+                {t('deliveredHeading')}
+              </h3>
+              <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                {t('deliveredDescription')}
+              </p>
+            </div>
+
+            {/* Stat 3 */}
+            <div className="flex flex-col items-start">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
+                {t('pricingHeading')}
+              </h3>
+              <div className="w-12 h-1 bg-gray-300 rounded-full mb-6"></div>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                {t('pricingDescription')}
+              </p>
+            </div>
+          </div>
+
+          {/* Key Stats */}
+          <div className="grid md:grid-cols-2 gap-8 mt-16 pt-16 border-t border-gray-100">
+            <div className="flex flex-col">
+              <p className="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-3">Achievement</p>
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">58+</h3>
+              <p className="text-gray-600">{t('completedProjects')}</p>
+            </div>
+
+            <div className="flex flex-col">
+              <p className="text-sm font-semibold tracking-wider uppercase text-gray-400 mb-3">Speed</p>
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">7-14</h3>
+              <p className="text-gray-600">{t('deliveryDays')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Trust & Payments Section */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Liquid Glass Label */}
           <div className="liquid-glass-label inline-flex px-4 py-2 rounded-full mb-6">
-            <span className="text-sm font-medium text-gray-700">Trust & Payments</span>
+            <span className="text-sm font-medium text-gray-700">{t('trustPayments')}</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">
-            Seamless payments for
-            <br />
-            Norwegian clients.
+            {t('trustPaymentsTitle')}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -171,9 +302,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6">
                 <Globe className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">Pay in NOK</h3>
+              <h3 className="text-lg font-semibold mb-3">{t('payInNOK')}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Send the agreed amount directly in Norwegian Krone. No currency conversion confusion on your end.
+                {t('payInNOKDesc')}
               </p>
             </div>
 
@@ -181,9 +312,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">We Cover Wise Fees</h3>
+              <h3 className="text-lg font-semibold mb-3">{t('coverWiseFees')}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                We absorb all transfer fees through Wise. What you agree to pay is exactly what leaves your account.
+                {t('coverWiseFeesDesc')}
               </p>
             </div>
 
@@ -191,9 +322,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center mb-6">
                 <FileText className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">Full Transparency</h3>
+              <h3 className="text-lg font-semibold mb-3">{t('fullTransparency')}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Clear invoicing, tracked payments, and professional receipts for your business records.
+                {t('fullTransparencyDesc')}
               </p>
             </div>
           </div>
@@ -201,11 +332,9 @@ export default function Home() {
           {/* Wise CTA */}
           <div className="bg-gray-900 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h3 className="text-xl font-semibold text-white mb-2">New to Wise?</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('newToWise')}</h3>
               <p className="text-gray-400 text-sm">
-                Sign up using our referral link and enjoy your first transfer fee-free.
-                <br />
-                It's the fastest, most transparent way to send money internationally.
+                {t('newToWiseDesc')}
               </p>
             </div>
             <a
@@ -227,31 +356,30 @@ export default function Home() {
           {/* Flash Sale Badge */}
           <div className="liquid-glass-flash-badge inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6">
             <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-            <span className="text-sm font-semibold text-emerald-700">Flash Sale Active</span>
+            <span className="text-sm font-semibold text-emerald-700">{t('flashSaleActive')}</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Premium Services.</h2>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-300 mb-8">Limited-Time Pricing.</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">{t('premiumServices')}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-300 mb-8">{t('limitedPricing')}</h2>
 
           <p className="text-gray-500 max-w-2xl mb-12">
-            Secure top-tier Nordic development standards at introductory rates. Prices revert to standard rates once
-            monthly slots are filled.
+            {t('servicesDescription')}
           </p>
 
           {/* Offer Status */}
           <div className="liquid-glass-status inline-flex items-center gap-4 px-6 py-3 rounded-full mb-12">
-            <span className="text-sm text-gray-600">Offer Status</span>
-            <span className="text-sm font-semibold">December Slots</span>
-            <span className="text-sm font-semibold text-amber-600">Closing Soon</span>
+            <span className="text-sm text-gray-600">{t('offerStatus')}</span>
+            <span className="text-sm font-semibold">{currentMonth} Slots</span>
+            <span className="text-sm font-semibold text-amber-600">{t('closingSoon')}</span>
           </div>
 
           {/* Service Cards */}
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/website-development">
               <ServiceCard
-                discount="-50% OFF"
-                title="Website Development"
-                description="Full-scale custom website built with React/Next.js. Perfect for businesses needing a robust online presence."
+                discount={t('discountOff')}
+                title={t('websiteDevelopmentTitle')}
+                description={t('websiteDevelopmentDesc')}
                 originalPrice="NOK 35,000"
                 salePrice="NOK 15,000"
                 slotsLeft={2}
@@ -259,9 +387,9 @@ export default function Home() {
             </Link>
             <Link href="/landing-page-dev">
               <ServiceCard
-                discount="-50% OFF"
-                title="Landing Page Dev"
-                description="High-conversion single-page site designed to capture leads and drive sales instantly."
+                discount={t('discountOff')}
+                title={t('landingPageDevTitle')}
+                description={t('landingPageDevDesc')}
                 originalPrice="NOK 15,000"
                 salePrice="NOK 7,500"
                 slotsLeft={4}
@@ -269,9 +397,9 @@ export default function Home() {
             </Link>
             <Link href="/website-maintenance">
               <ServiceCard
-                discount="-50% OFF"
-                title="Website Maintenance"
-                description="Expert troubleshooting, bug fixes, and performance optimization for existing sites."
+                discount={t('discountOff')}
+                title={t('websiteMaintenanceTitle')}
+                description={t('websiteMaintenanceDesc')}
                 originalPrice="NOK 5,000"
                 salePrice="NOK 2,500"
                 slotsLeft={5}
@@ -279,9 +407,9 @@ export default function Home() {
             </Link>
             <Link href="/responsive-redesign">
               <ServiceCard
-                discount="-50% OFF"
-                title="Responsive Redesign"
-                description="Modernize your legacy site to look perfect on all mobile devices and tablets."
+                discount={t('discountOff')}
+                title={t('responsiveRedesignTitle')}
+                description={t('responsiveRedesignDesc')}
                 originalPrice="NOK 12,000"
                 salePrice="NOK 6,000"
                 slotsLeft={3}
@@ -291,23 +419,97 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-gray-900">{t('howItWorks')}</h2>
+            <p className="text-lg md:text-xl text-gray-500 max-w-2xl">
+              {t('howItWorksSubtitle')}
+            </p>
+          </div>
+
+          {/* Steps Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Step 1 */}
+            <div className="liquid-glass-service-card p-6 rounded-2xl flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
+                    1
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900">{t('step1Title')}</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {t('step1Description')}
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="liquid-glass-service-card p-6 rounded-2xl flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
+                    2
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900">{t('step2Title')}</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {t('step2Description')}
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="liquid-glass-service-card p-6 rounded-2xl flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
+                    3
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900">{t('step3Title')}</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {t('step3Description')}
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="liquid-glass-service-card p-6 rounded-2xl flex flex-col">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="flex-shrink-0">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-gray-900 text-white font-bold text-lg">
+                    4
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900">{t('step4Title')}</h3>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {t('step4Description')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
       <section id="work" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <p className="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-2">Portfolio</p>
+              <p className="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-2">{t('portfolio')}</p>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Selected works for
-                <br />
-                ambitious brands
+                {t('ourWork')}
               </h2>
             </div>
             <a
               href="#"
               className="hidden md:inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors text-sm"
             >
-              View all case studies
+              {t('viewAllWork')}
               <ChevronRight className="w-4 h-4" />
             </a>
           </div>
@@ -347,12 +549,12 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-[#111111]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-2">Let's Build</h2>
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-8">Impact.</h2>
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-2">{t('letsBuild')}</h2>
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-8">{t('impact')}</h2>
 
           <p className="text-gray-400 mb-10 max-w-lg">
-            Ready to elevate your digital presence? Reach out today to claim your{" "}
-            <span className="text-white font-semibold">Free Advanced SEO Audit</span> with your project kickoff.
+            {t('contactDescription')}
+            <span className="text-white font-semibold">{t('freeAudit')}</span> {t('withProject')}
           </p>
 
           {/* Contact Links with Liquid Glass Effect */}
@@ -365,23 +567,9 @@ export default function Home() {
               className="liquid-glass-contact-link inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 rounded-full transition-all hover:scale-[1.02] w-auto"
               style={{ minWidth: "320px" }}
             >
-              <span className="text-white text-sm font-medium">Chat with Devnix on WhatsApp</span>
+              <span className="text-white text-sm font-medium">{t('chatWhatsApp')}</span>
               <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <Phone className="w-5 h-5 text-white" />
-              </div>
-            </a>
-
-            {/* Facebook Messenger */}
-            <a
-              href="https://m.me/61585271784479?source=qr_link_share"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="liquid-glass-contact-link inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 rounded-full transition-all hover:scale-[1.02] w-auto"
-              style={{ minWidth: "300px" }}
-            >
-              <span className="text-white text-sm font-medium">Message us on Messenger</span>
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <MessageCircle className="w-5 h-5 text-white" />
               </div>
             </a>
 
@@ -405,7 +593,7 @@ export default function Home() {
               className="liquid-glass-contact-link inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 rounded-full transition-all hover:scale-[1.02] w-auto"
               style={{ minWidth: "200px" }}
             >
-              <span className="text-white text-sm font-medium">Devnix Global</span>
+              <span className="text-white text-sm font-medium">{t('devnixGlobal')}</span>
               <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <Facebook className="w-5 h-5 text-white" />
               </div>
@@ -424,14 +612,14 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Privacy Policy
+                {t('privacyPolicy')}
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Terms of Service
+                {t('termsOfService')}
               </a>
             </div>
           </div>
-          <p className="text-gray-500 text-sm mt-6">© 2025 Devnix. Built for Norway.</p>
+          <p className="text-gray-500 text-sm mt-6">{t('copyright')}</p>
         </div>
       </footer>
     </div>
