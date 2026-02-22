@@ -384,11 +384,15 @@ export default function LandingPageDevOffer() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-red-600 transition-colors">{t('websiteDevelopmentTitle')}</h3>
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">{t('websiteDevelopmentShort')}</p>
                 
-                <div className="flex items-center justify-between">
-                  <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
-                    <span className="text-xs font-semibold text-orange-700">2 SLOTS LEFT</span>
+                <div className="space-y-3 mt-4 border-t border-gray-200 pt-4">
+                  <div className="flex items-center justify-between">
+                    <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
+                      <span className="text-xs font-semibold text-orange-700">2 SLOTS LEFT</span>
+                    </div>
                   </div>
-                  <span className="text-xs font-bold text-gray-400 group-hover:text-red-600 transition-colors uppercase tracking-wide">CLICK →</span>
+                  <button className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white font-bold py-3 rounded-lg hover:from-red-600 hover:to-red-700 transition-all group-hover:shadow-lg group-hover:scale-105 active:scale-95">
+                    CLICK NOW →
+                  </button>
                 </div>
               </div>
             </Link>
@@ -411,11 +415,15 @@ export default function LandingPageDevOffer() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-amber-600 transition-colors">{t('websiteMaintenanceTitle')}</h3>
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">{t('websiteMaintenanceShort')}</p>
                 
-                <div className="flex items-center justify-between">
-                  <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
-                    <span className="text-xs font-semibold text-orange-700">5 SLOTS LEFT</span>
+                <div className="space-y-3 mt-4 border-t border-gray-200 pt-4">
+                  <div className="flex items-center justify-between">
+                    <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
+                      <span className="text-xs font-semibold text-orange-700">5 SLOTS LEFT</span>
+                    </div>
                   </div>
-                  <span className="text-xs font-bold text-gray-400 group-hover:text-amber-600 transition-colors uppercase tracking-wide">CLICK →</span>
+                  <button className="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold py-3 rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all group-hover:shadow-lg group-hover:scale-105 active:scale-95">
+                    CLICK NOW →
+                  </button>
                 </div>
               </div>
             </Link>
@@ -438,11 +446,15 @@ export default function LandingPageDevOffer() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-emerald-600 transition-colors">{t('responsiveRedesignTitle')}</h3>
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">{t('responsiveRedesignShort')}</p>
                 
-                <div className="flex items-center justify-between">
-                  <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
-                    <span className="text-xs font-semibold text-orange-700">3 SLOTS LEFT</span>
+                <div className="space-y-3 mt-4 border-t border-gray-200 pt-4">
+                  <div className="flex items-center justify-between">
+                    <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
+                      <span className="text-xs font-semibold text-orange-700">3 SLOTS LEFT</span>
+                    </div>
                   </div>
-                  <span className="text-xs font-bold text-gray-400 group-hover:text-emerald-600 transition-colors uppercase tracking-wide">CLICK →</span>
+                  <button className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-bold py-3 rounded-lg hover:from-emerald-600 hover:to-emerald-700 transition-all group-hover:shadow-lg group-hover:scale-105 active:scale-95">
+                    CLICK NOW →
+                  </button>
                 </div>
               </div>
             </Link>
