@@ -49,13 +49,12 @@ export default function ResponsiveRedesignPage() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
-            Responsive Redesign for Businesses
-            <span className="text-gray-300"> Ready to Look Modern</span>
+            {t('responsiveRedesignHero')}
+            <span className="text-gray-300"> {t('readyToLookModern')}</span>
           </h1>
 
           <p className="text-xl text-gray-500 mb-10 max-w-2xl leading-relaxed">
-            Your website is the face of your business. If it looks outdated or doesn't work well on mobile, visitors
-            leave before they even see your value.
+            {t('websiteIsFace')}
           </p>
 
           <a
@@ -71,21 +70,18 @@ export default function ResponsiveRedesignPage() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
-            What if your site looked perfect everywhere?
+            {t('imagePerfectEverywhere')}
           </h2>
 
           <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-6">
             <p>
-              Imagine your old site transformed into a fast, modern, and responsive experience. Visitors on phones,
-              tablets, or desktop see perfection every time.
+              {t('transformedIntoFast')}
             </p>
             <p>
-              No more pinching to zoom. No more sideways scrolling. No more embarrassment when a client visits your site
-              on their phone. Just a clean, professional experience that represents your business the way it deserves.
+              {t('noMorePinching')}
             </p>
             <p>
-              Your competitors already look modern. Your clients expect modern. It's time your website caught up—without
-              starting from scratch.
+              {t('competitorsLookModern')}
             </p>
           </div>
 
@@ -110,36 +106,33 @@ export default function ResponsiveRedesignPage() {
       {/* Why This Matters */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">Why this matters for your business</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">{t('whyThisMattersResponsive')}</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                title: "Professional on Any Device",
-                description:
-                  "Your site adapts beautifully to phones, tablets, and desktops. First impressions happen everywhere.",
+                title: t('professionalAnyDevice'),
+                description: t('siteAdaptsBeautifully'),
               },
               {
-                title: "Increased User Engagement",
-                description: "When visitors can navigate easily, they stay longer. Longer stays mean more conversions.",
+                title: t('increasedUserEngagement'),
+                description: t('whenVisitorsNavigate'),
               },
               {
-                title: "Reduced Bounce Rates",
-                description:
-                  "Mobile users leave broken sites in seconds. A responsive redesign keeps them reading, scrolling, acting.",
+                title: t('reducedBounceRates'),
+                description: t('mobileUsersLeave'),
               },
               {
-                title: "Modern Without Rebuilding",
-                description:
-                  "We update your design while keeping your brand identity intact. Evolution, not revolution.",
+                title: t('modernWithoutRebuilding'),
+                description: t('updateYourDesign'),
               },
               {
-                title: "Works Across All Browsers",
-                description: "Chrome, Safari, Firefox, Edge—your site performs consistently for every visitor.",
+                title: t('worksAcrossAllBrowsers'),
+                description: t('chromeFirefox'),
               },
               {
-                title: "Better Search Rankings",
-                description: "Google prioritizes mobile-friendly sites. A responsive redesign helps you get found.",
+                title: t('betterSearchRankings'),
+                description: t('googleMobileFriendly'),
               },
             ].map((item, index) => (
               <div key={index} className="liquid-glass-card p-6 rounded-2xl">
@@ -157,16 +150,16 @@ export default function ResponsiveRedesignPage() {
       {/* What You Get */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">What you get</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">{t('whatYouGetResponsive')}</h2>
 
           <div className="grid gap-4">
             {[
-              "Full responsive redesign with React/Next.js",
-              "Mobile-first layout and tablet optimization",
-              "Modern design update while keeping your brand identity",
-              "Performance and speed improvements",
-              "SEO-friendly structure",
-              "14 days post-launch support",
+              t('fullResponsiveRedesign'),
+              t('mobileFirstLayoutTablet'),
+              t('modernDesignUpdate'),
+              t('performancespeedImprovements'),
+              t('seoFriendlyStructureResponsive'),
+              t('postLaunchSupport14Days'),
             ].map((item, index) => (
               <div
                 key={index}
@@ -185,36 +178,32 @@ export default function ResponsiveRedesignPage() {
       {/* Process & Timeline */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Process & Timeline</h2>
-          <p className="text-gray-500 mb-12">Transparent steps. Clear communication. No surprises.</p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">{t('processTimeline')}</h2>
+          <p className="text-gray-500 mb-12">{t('transparentStepsClear')}</p>
 
           <div className="space-y-6">
             {[
               {
-                phase: "Day 1–2",
-                title: "Evaluation & Planning",
-                description:
-                  "We review your current site, identify what works, and plan the responsive redesign. Content and assets gathered.",
+                phase: t('day1To2Evaluation'),
+                title: '',
+                description: t('reviewCurrentSite'),
               },
               {
-                phase: "Day 3–7",
-                title: "Redesign & Development",
-                description:
-                  "Your site gets transformed. Mobile-first approach, modern aesthetics, your brand preserved. You see progress throughout.",
+                phase: t('day3To7Redesign'),
+                title: '',
+                description: t('siteTransformed'),
               },
               {
-                phase: "Day 8–10",
-                title: "Testing & Launch",
-                description:
-                  "Rigorous testing across all devices and browsers. Final tweaks based on your feedback. Then we go live.",
+                phase: t('day8To10Testing'),
+                title: '',
+                description: t('rigorousTesting'),
               },
             ].map((step, index) => (
               <div key={index} className="flex gap-6 items-start">
-                <div className="liquid-glass-card px-4 py-2 rounded-lg flex-shrink-0">
+                <div className="liquid-glass-card px-4 py-3 rounded-lg flex-shrink-0">
                   <span className="text-sm font-semibold text-gray-700">{step.phase}</span>
                 </div>
                 <div className="pt-1">
-                  <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
                   <p className="text-gray-500 leading-relaxed">{step.description}</p>
                 </div>
               </div>
@@ -223,7 +212,7 @@ export default function ResponsiveRedesignPage() {
 
           <div className="mt-12 flex items-center gap-3 text-gray-500">
             <Clock className="w-5 h-5" />
-            <span>Total timeline: 1–2 weeks</span>
+            <span>{t('weekDelivery')}</span>
           </div>
         </div>
       </section>
@@ -232,25 +221,25 @@ export default function ResponsiveRedesignPage() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12">
-            Costs & Typical Timelines
-            <span className="text-gray-400 block text-2xl mt-2">Norwegian Market</span>
+            {t('costTypicalTimelines')}
+            <span className="text-gray-400 block text-2xl mt-2">{t('norwegianMarket')}</span>
           </h2>
 
           {/* Market Comparison */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 mb-8 border border-gray-100">
-            <h3 className="text-lg font-semibold mb-6 text-gray-700">What others typically charge:</h3>
+            <h3 className="text-lg font-semibold mb-6 text-gray-700">{t('whatOthersCharge')}</h3>
             <div className="space-y-4 text-gray-600">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-gray-200 gap-1">
-                <span>Basic responsive updates</span>
-                <span className="font-medium">NOK 8,000 – 15,000</span>
+                <span>{t('basicResponsiveUpdates')}</span>
+                <span className="font-medium">{t('basicResponsivePrice')}</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-gray-200 gap-1">
-                <span>Full responsive redesign</span>
-                <span className="font-medium">NOK 12,000 – 25,000</span>
+                <span>{t('fullResponsiveRedesignPrice')}</span>
+                <span className="font-medium">{t('fullResponsivePrice')}</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 gap-1">
-                <span>Complete site modernization</span>
-                <span className="font-medium">NOK 25,000 – 50,000+</span>
+                <span>{t('completeSiteModernization')}</span>
+                <span className="font-medium">{t('completeSitePrice')}</span>
               </div>
             </div>
           </div>
@@ -264,22 +253,21 @@ export default function ResponsiveRedesignPage() {
               <span className="text-sm text-gray-500">December Offer</span>
             </div>
 
-            <h3 className="text-xl sm:text-2xl font-bold mb-2">Responsive Redesign Package</h3>
-            <p className="text-gray-500 mb-6">Transform your site for all devices.</p>
+            <h3 className="text-xl sm:text-2xl font-bold mb-2">{t('responsiveRedesignPackage')}</h3>
+            <p className="text-gray-500 mb-6">{t('transformYourSite')}</p>
 
             <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-6">
-              <span className="text-3xl sm:text-4xl font-bold">NOK 6,000</span>
-              <span className="text-lg sm:text-xl text-gray-400 line-through">NOK 12,000</span>
+              <span className="text-3xl sm:text-4xl font-bold">{t('nok6000')}</span>
+              <span className="text-lg sm:text-xl text-gray-400 line-through">{t('nok12000')}</span>
             </div>
 
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              <strong>Why the discount?</strong> Limited December availability. We're focusing on fewer projects to
-              deliver exceptional quality.
+              <strong>{t('whyDiscount')}</strong> {t('limitedDecemberAvailability')}
             </p>
 
             <div className="flex items-start sm:items-center gap-2 text-amber-700 text-sm font-medium">
               <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse flex-shrink-0 mt-1.5 sm:mt-0"></span>
-              <span>3 slots available. Once filled, pricing returns to normal.</span>
+              <span>{t('threeSlots')}</span>
             </div>
           </div>
         </div>
@@ -295,14 +283,14 @@ export default function ResponsiveRedesignPage() {
                 <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
                   <Users className="w-5 h-5 text-emerald-600" />
                 </div>
-                <h2 className="text-2xl font-bold">Who this is for</h2>
+                <h2 className="text-2xl font-bold">{t('whoThisIsForResponsive')}</h2>
               </div>
               <ul className="space-y-4">
                 {[
-                  "Businesses with outdated sites needing modernization",
-                  "Companies wanting better mobile experiences for clients",
-                  "Anyone who wants a professional, clean look without full redevelopment",
-                  "Brands ready to stop losing mobile visitors",
+                  t('businessesOutdated'),
+                  t('companiesWantingBetter'),
+                  t('anyoneWhoWants'),
+                  t('brandReadyToStop'),
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
@@ -318,14 +306,14 @@ export default function ResponsiveRedesignPage() {
                 <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
                   <XCircle className="w-5 h-5 text-gray-400" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-400">Who this is not for</h2>
+                <h2 className="text-2xl font-bold text-gray-400">{t('whoThisIsNotForResponsive')}</h2>
               </div>
               <ul className="space-y-4">
                 {[
-                  "Those wanting a brand new complex website",
-                  "Anyone expecting unlimited redesign revisions",
-                  "Companies rushing projects in less than a week",
-                  "Projects requiring complete rebranding",
+                  t('thoseWantingBrand'),
+                  t('anyoneExpectingUnlimited'),
+                  t('companiesRushing'),
+                  t('projectsRequiringComplete'),
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <XCircle className="w-5 h-5 text-gray-300 flex-shrink-0 mt-0.5" />
@@ -343,11 +331,11 @@ export default function ResponsiveRedesignPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
-            <span className="text-sm font-semibold text-amber-700">Limited Availability</span>
+            <span className="text-sm font-semibold text-amber-700">{t('limitedAvailability')}</span>
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">3 slots left in December</h2>
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">{t('slotsLeftDecemberScarcity')}</h2>
           <p className="text-gray-600 max-w-lg mx-auto">
-            Once gone, the price goes back to normal. This is a rare opportunity to modernize at half price.
+            {t('onceGonePrice')}
           </p>
         </div>
       </section>
@@ -355,9 +343,9 @@ export default function ResponsiveRedesignPage() {
       {/* Final CTA */}
       <section className="py-20 px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">Ready to look modern?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">{t('readyToLookModernCTA')}</h2>
 
-          <p className="text-gray-500 text-lg mb-10">No calls. No pressure. Just a conversation.</p>
+          <p className="text-gray-500 text-lg mb-10">{t('noCalls')}</p>
 
           <a
             href="#contact"
@@ -367,7 +355,7 @@ export default function ResponsiveRedesignPage() {
           </a>
 
           <p className="text-gray-400 text-sm mt-6">
-            Click to start a conversation on Messenger. We'll discuss your current site and how we can help.
+            {t('clickToStartConversation')}
           </p>
         </div>
       </section>
