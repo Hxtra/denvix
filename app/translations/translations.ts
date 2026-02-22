@@ -212,11 +212,11 @@ export const translations = {
     requestWebsiteDevelopmentOffer: 'Be om nettstedsutvikling-tilbud',
     
     // Landing Page Dev Page - Norwegian
-    slotsLeftDecember: '4 Slots Left for December',
-    landingPageConversion: 'Landing Page Development for Businesses Ready to Convert Visitors Into Clients',
-    landingPageDesc: 'Custom high-performance landing page built with React and Next.js. Fast, conversion-focused, GDPR-ready.',
-    weekDelivery: '1-2 week delivery',
-    conversionOptimized: 'Conversion optimized',
+    slotsLeftDecember: '4 plasser igjen for desember',
+    landingPageConversion: 'Landing Page Utvikling for Bedrifter Klare til å Konvertere Besøkende til Klienter',
+    landingPageDesc: 'Tilpasset høyytelses landing page bygget med React og Next.js. Rask, konverteringsfokusert, GDPR-klar.',
+    weekDelivery: '1-2 ukers levering',
+    conversionOptimized: 'Konverteringsoptimert',
     everyVisitorCounts: 'Hver besøkende teller. Hver klikk betyr noe.',
     problemP1: 'Din nåværende side kan miste potensielle klienter før de engang leser budskapet ditt. Langsom lastetid, uklart budskap eller et forvirrende oppsett kan avskrekke interesserte besøkende på sekunder.',
     problemP2: 'Tenk deg en enkeltsidig nettsted som veileder dine besøkende jevnt og trutt, forklarer verdien din klart, og leder dem til handling uten forvirring. Det er det dette tilbudet leverer.',
