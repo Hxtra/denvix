@@ -90,10 +90,10 @@ export const translations = {
     impact: 'Innvirkning.',
     freeAudit: 'Gratis avansert SEO-revisjon',
     withProject: 'med ditt prosjekt kickoff.',
-    chatWhatsApp: 'Chat med Devnix på WhatsApp',
+    chatWhatsApp: 'Chat med Hextral på WhatsApp',
     email: 'E-post',
-    devnixGlobal: 'Devnix Global',
-    copyright: '© 2025 Devnix. Bygget for Norge.',
+    devnixGlobal: 'Hextral Global',
+    copyright: '© 2025 Hextral. Bygget for Norge.',
     
     // Footer
     home: 'Hjem',
@@ -536,10 +536,10 @@ export const translations = {
     impact: 'Impact.',
     freeAudit: 'Free Advanced SEO Audit',
     withProject: 'with your project kickoff.',
-    chatWhatsApp: 'Chat with Devnix on WhatsApp',
+    chatWhatsApp: 'Chat with Hextral on WhatsApp',
     email: 'Email',
-    devnixGlobal: 'Devnix Global',
-    copyright: '© 2025 Devnix. Built for Norway.',
+    devnixGlobal: 'Hextral Global',
+    copyright: '© 2025 Hextral. Built for Norway.',
     
     // Footer
     home: 'Home',

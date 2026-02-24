@@ -25,8 +25,8 @@ export default function WebsiteMaintenancePage() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-              <img src="/logo.png" alt="Devnix Logo" className="w-8 h-8 rounded-lg" />
-              <span className="font-semibold text-lg">Devnix</span>
+              <img src="/logo/hextral-logo.png" alt="Hextral Logo" className="w-8 h-8" />
+              <span className="font-semibold text-lg">Hextral</span>
             </Link>
           </div>
           <Link
@@ -466,8 +466,8 @@ export default function WebsiteMaintenancePage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <Link href="/" className="flex items-center gap-2">
-              <img src="/logo.png" alt="Devnix Logo" className="w-8 h-8 rounded-lg" />
-              <span className="text-white font-semibold">Devnix</span>
+              <img src="/logo/hextral-logo.png" alt="Hextral Logo" className="w-8 h-8" />
+              <span className="text-white font-semibold">Hextral</span>
             </Link>
             <div className="flex items-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
