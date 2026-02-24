@@ -5,6 +5,24 @@ import Link from "next/link"
 import { ArrowLeft, Check, Clock, Users, XCircle, Smartphone, Monitor, Tablet } from "lucide-react"
 import { useTranslation } from "@/app/hooks/useTranslation"
 
+function getCurrentMonth() {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+  return months[new Date().getMonth()]
+}
+
 export default function ResponsiveRedesignPage() {
   const [isLoaded, setIsLoaded] = useState(false)
   const { t } = useTranslation()
@@ -44,7 +62,7 @@ export default function ResponsiveRedesignPage() {
           <div className="inline-flex items-center gap-2 mb-8 liquid-glass-badge px-4 py-2 rounded-full">
             <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
             <span className="text-xs font-semibold tracking-wider uppercase text-amber-700">
-              3 Slots Left · December Delivery
+              3 Slots Left · {getCurrentMonth()} Delivery
             </span>
           </div>
 
@@ -250,7 +268,7 @@ export default function ResponsiveRedesignPage() {
               <span className="liquid-glass-flash-badge px-3 py-1 rounded-full text-xs font-semibold text-emerald-700">
                 50% OFF
               </span>
-              <span className="text-sm text-gray-500">December Offer</span>
+              <span className="text-sm text-gray-500">{t('decemberOffer')}</span>
             </div>
 
             <h3 className="text-xl sm:text-2xl font-bold mb-2">{t('responsiveRedesignPackage')}</h3>

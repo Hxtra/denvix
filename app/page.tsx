@@ -659,7 +659,7 @@ function ServiceCard({
       {/* Scarcity Badge - Eye-Catching */}
       <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-4 py-2 flex items-center gap-2 w-fit mb-6">
         <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-        <span className="text-xs font-semibold text-orange-700">{slotsLeft} SLOTS LEFT · DECEMBER DELIVERY</span>
+        <span className="text-xs font-semibold text-orange-700">{slotsLeft} SLOTS LEFT · {getCurrentMonth().toUpperCase()} DELIVERY</span>
       </div>
 
       {/* CLICK → Button Indicator */}

@@ -115,7 +115,7 @@ export const translations = {
     // Website Development Page
     websiteDevelopment: 'Nettstedsutvikling',
     forNorwegianBusinesses: 'for norske bedrifter.',
-    December: 'desember',
+    December: 'februar',
     deliveryWindow: 'leveringsvindu',
     requestOffer: 'Be om nettstedsutvikling-tilbud',
     webDevelopmentPageDesc: 'Tilpasset høyytelses nettsted bygget med React og Next.js. Rask, sikker, GDPR-klar.',
@@ -175,7 +175,7 @@ export const translations = {
     limitedOffer: 'Begrenset tilbud',
     thisProjectPrice: 'Denne prosjektprisen',
     reasonForDiscount: 'Årsak til rabatt:',
-    decemberAvailability: 'Begrenset desembertilgjengelighet og fokus på færre høykvalitetsprosjekter.',
+    decemberAvailability: 'Begrenset februartilgjengelighet og fokus på færre høykvalitetsprosjekter.',
     onlySlots: 'Bare 2 plasser tilgjengelig. Når plassene er fylt, går prisene tilbake til normalt.',
     
     // Imagine Section
@@ -212,7 +212,7 @@ export const translations = {
     requestWebsiteDevelopmentOffer: 'Be om nettstedsutvikling-tilbud',
     
     // Landing Page Dev Page - Norwegian
-    slotsLeftDecember: '4 plasser igjen for desember',
+    slotsLeftDecember: '4 plasser igjen for februar',
     landingPageConversion: 'Landing Page Utvikling for Bedrifter Klare til å Konvertere Besøkende til Klienter',
     landingPageDesc: 'Tilpasset høyytelses landing page bygget med React og Next.js. Rask, konverteringsfokusert, GDPR-klar.',
     weekDelivery: '1-2 ukers levering',
@@ -253,7 +253,7 @@ export const translations = {
     typicalTimeline: 'Typisk tidslinje:',
     typicalTimelineValue: '2-4 uker med byråer',
     mostAgencies: 'De fleste norske byråer krever premiumtakster for landing pages, ofte buntet med unødvendige tjenester.',
-    decemberOffer: 'Desembertilbud',
+    decemberOffer: 'Februartilbud',
     landingPagePrice: 'NOK 7 500',
     landingPagePriceOriginal: 'NOK 15 000',
     timelineCompletion: 'Tidslinje: 1-2 uker til fullføring',
@@ -269,7 +269,7 @@ export const translations = {
     anyoneInstantDelivery: 'De som ønsker øyeblikkelig levering uten ordentlig planlegging',
     projectsUnlimitedRevisions: 'Prosjekter som krever ubegrensede revisjoner',
     limitedAvailability: 'Begrenset tilgjengelighet',
-    slotsLeftDecemberScarcity: '4 plasser igjen i desember',
+    slotsLeftDecemberScarcity: '4 plasser igjen i februar',
     onceGonePrice: 'Når de er borte, går prisen tilbake til standard. Ikke vent og gå glipp av denne muligheten.',
     noCalls2: 'Ingen samtaler. Intet press.',
     justConversation2: 'Bare en samtale.',
@@ -390,7 +390,7 @@ export const translations = {
     nok6000: 'NOK 6 000',
     nok12000: 'NOK 12 000',
     whyDiscount: 'Hvorfor rabatten?',
-    limitedDecemberAvailability: 'Begrenset desembertilgjengelighet. Vi fokuserer på færre prosjekter for å levere eksepsjonell kvalitet.',
+    limitedDecemberAvailability: 'Begrenset februartilgjengelighet. Vi fokuserer på færre prosjekter for å levere eksepsjonell kvalitet.',
     threeSlots: '3 plasser tilgjengelig. Når de er fylt, går prisingen tilbake til normal.',
     whoThisIsForResponsive: 'Hvem dette er for',
     businessesOutdated: 'Bedrifter med utdaterte nettsteder som trenger modernisering',
@@ -408,10 +408,10 @@ export const translations = {
     
     // Scarcity & Service Card Translations
     slotsLeft: 'plasser igjen',
-    decemberDelivery: 'desember levering',
+    decemberDelivery: 'februar levering',
     exploreOtherServices: 'Utforsk andre tjenester',
     limitedAvailability: 'Begrenset tilgjengelighet',
-    slotsLeftDecemberScarcity: '3 plasser igjen i desember',
+    slotsLeftDecemberScarcity: '3 plasser igjen i februar',
     onceGonePrice: 'Når de er borte, går prisingen tilbake til normal. Dette er en sjelden mulighet til å modernisere til halv pris.',
     
     // Cross-Service Navigation
@@ -559,7 +559,7 @@ export const translations = {
     // Website Development Page
     websiteDevelopment: 'Website Development',
     forNorwegianBusinesses: 'for Norwegian Businesses.',
-    December: 'December',
+    December: 'February',
     deliveryWindow: 'delivery window',
     requestOffer: 'Request Website Development Offer',
     webDevelopmentPageDesc: 'Custom high-performance website built with React and Next.js. Fast, secure, GDPR-ready.',
@@ -619,7 +619,7 @@ export const translations = {
     limitedOffer: 'Limited Offer',
     thisProjectPrice: 'This project price',
     reasonForDiscount: 'Reason for discount:',
-    decemberAvailability: 'Limited December availability and focus on fewer high-quality projects.',
+    decemberAvailability: 'Limited February availability and focus on fewer high-quality projects.',
     onlySlots: 'Only 2 slots available. Once filled, pricing returns to normal.',
     
     // Imagine Section
@@ -656,7 +656,7 @@ export const translations = {
     requestWebsiteDevelopmentOffer: 'Request Website Development Offer',
     
     // Landing Page Dev Page - English
-    slotsLeftDecember: '4 Slots Left for December',
+    slotsLeftDecember: '4 Slots Left for February',
     landingPageConversion: 'Landing Page Development for Businesses Ready to Convert Visitors Into Clients',
     landingPageDesc: 'Custom high-performance landing page built with React and Next.js. Fast, conversion-focused, GDPR-ready.',
     weekDelivery: '1-2 week delivery',
@@ -697,11 +697,11 @@ export const translations = {
     typicalTimeline: 'Typical timeline:',
     typicalTimelineValue: '2-4 weeks with agencies',
     mostAgencies: 'Most Norwegian agencies charge premium rates for landing pages, often bundling unnecessary services.',
-    decemberOffer: 'December Offer',
+    decemberOffer: 'February Offer',
     landingPagePrice: 'NOK 7,500',
     landingPagePriceOriginal: 'NOK 15,000',
     timelineCompletion: 'Timeline: 1-2 weeks for completion',
-    whyDiscountLP: 'Why the discount? Limited December availability and focus on fewer high-quality projects.',
+    whyDiscountLP: 'Why the discount? Limited February availability and focus on fewer high-quality projects.',
     onlySlots4: 'Only 4 slots available. Once filled, pricing returns to standard.',
     whoThisForLP: 'Who this is for',
     whoThisNotForLP: 'Who this is not for',
@@ -713,7 +713,7 @@ export const translations = {
     anyoneInstantDelivery: 'Those who want instant delivery without proper planning',
     projectsUnlimitedRevisions: 'Projects requiring unlimited revisions',
     limitedAvailability: 'Limited Availability',
-    slotsLeftDecemberScarcity: '4 slots left in December',
+    slotsLeftDecemberScarcity: '4 slots left in February',
     onceGonePrice: 'Once gone, the price goes back to standard. Don\'t wait and miss this opportunity.',
     noCalls2: 'No calls. No pressure.',
     justConversation2: 'Just a conversation.',
@@ -786,10 +786,10 @@ export const translations = {
     
     // Scarcity & Service Card Translations
     slotsLeft: 'slots left',
-    decemberDelivery: 'December delivery',
+    decemberDelivery: 'February delivery',
     exploreOtherServices: 'Explore Other Services',
     limitedAvailability: 'Limited Availability',
-    slotsLeftDecemberScarcity: '3 slots left in December',
+    slotsLeftDecemberScarcity: '3 slots left in February',
     onceGonePrice: 'Once gone, the price goes back to normal. This is a rare opportunity to modernize at half price.',
     
     // Cross-Service Navigation
