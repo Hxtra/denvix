@@ -54,9 +54,9 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <img src="/logo/hextral-logo.png" alt="Hextral Logo" className="w-8 h-8" />
-            <span className="font-semibold text-lg">Hextral</span>
+          <div className="flex items-center gap-3">
+            <img src="/logo/denvix-logo.png" alt="Denvix Logo" className="h-10 w-auto" />
+            <span className="font-semibold text-lg">Denvix</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#work" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
