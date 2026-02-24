@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Check, Clock, Shield, Zap, Wrench, RefreshCw, AlertCircle } from "lucide-react"
 import { useTranslation } from "@/app/hooks/useTranslation"
+import { getCurrentMonth } from "@/app/utils/getMonth"
 
 export default function WebsiteMaintenancePage() {
   const [isLoaded, setIsLoaded] = useState(false)

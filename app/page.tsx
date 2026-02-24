@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { LanguageSelector } from "@/app/components/LanguageSelector"
 import { useTranslation } from "@/app/hooks/useTranslation"
+import { getCurrentMonth } from "@/app/utils/getMonth"
 import {
   Clock,
   Globe,

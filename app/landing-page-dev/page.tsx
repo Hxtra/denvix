@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Check, Clock, ArrowLeft, Smartphone, Zap, Target, BarChart3 } from "lucide-react"
 import { useTranslation } from "@/app/hooks/useTranslation"
+import { getCurrentMonth } from "@/app/utils/getMonth"
 
 export default function LandingPageDevOffer() {
   const [isLoaded, setIsLoaded] = useState(false)
