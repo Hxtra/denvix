@@ -395,7 +395,7 @@ export default function Home() {
                 description={t('websiteDevelopmentDesc')}
                 originalPrice="NOK 35,000"
                 salePrice="NOK 15,000"
-                slotsLeft={2}
+                slotsText={t('slot2Left')}
               />
             </Link>
             <Link href="/landing-page-dev">
@@ -405,7 +405,7 @@ export default function Home() {
                 description={t('landingPageDevDesc')}
                 originalPrice="NOK 15,000"
                 salePrice="NOK 7,500"
-                slotsLeft={4}
+                slotsText={t('slot4Left')}
               />
             </Link>
             <Link href="/website-maintenance">
@@ -415,7 +415,7 @@ export default function Home() {
                 description={t('websiteMaintenanceDesc')}
                 originalPrice="NOK 5,000"
                 salePrice="NOK 2,500"
-                slotsLeft={5}
+                slotsText={t('slot5Left')}
               />
             </Link>
             <Link href="/responsive-redesign">
@@ -425,7 +425,7 @@ export default function Home() {
                 description={t('responsiveRedesignDesc')}
                 originalPrice="NOK 12,000"
                 salePrice="NOK 6,000"
-                slotsLeft={3}
+                slotsText={t('slot3Left')}
               />
             </Link>
           </div>
@@ -645,14 +645,14 @@ function ServiceCard({
   description,
   originalPrice,
   salePrice,
-  slotsLeft,
+  slotsText,
 }: {
   discount: string
   title: string
   description: string
   originalPrice: string
   salePrice: string
-  slotsLeft: number
+  slotsText: string
 }) {
   return (
     <div className="liquid-glass-service-card p-8 rounded-2xl relative overflow-hidden group transition-all hover:scale-[1.01] hover:shadow-lg cursor-pointer border-2 border-transparent hover:border-gray-300 flex flex-col h-full">
@@ -672,7 +672,7 @@ function ServiceCard({
       {/* Scarcity Badge - Eye-Catching */}
       <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-4 py-2 flex items-center gap-2 w-fit mb-6">
         <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-        <span className="text-xs font-semibold text-orange-700">{slotsLeft} SLOTS LEFT · {getCurrentMonth().toUpperCase()} DELIVERY</span>
+        <span className="text-xs font-semibold text-orange-700">{slotsText} · {getCurrentMonth().toUpperCase()} DELIVERY</span>
       </div>
 
       {/* CLICK → Button Indicator */}

@@ -397,7 +397,7 @@ export default function WebsiteMaintenancePage() {
                 
                 <div className="flex items-center justify-between">
                   <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
-                    <span className="text-xs font-semibold text-orange-700">2 SLOTS LEFT</span>
+                    <span className="text-xs font-semibold text-orange-700">{t('slot2Left')}</span>
                   </div>
                   <span className="text-xs font-bold text-gray-400 group-hover:text-red-600 transition-colors uppercase tracking-wide">CLICK →</span>
                 </div>
@@ -424,7 +424,7 @@ export default function WebsiteMaintenancePage() {
                 
                 <div className="flex items-center justify-between">
                   <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
-                    <span className="text-xs font-semibold text-orange-700">4 SLOTS LEFT</span>
+                    <span className="text-xs font-semibold text-orange-700">{t('slot4Left')}</span>
                   </div>
                   <span className="text-xs font-bold text-gray-400 group-hover:text-orange-600 transition-colors uppercase tracking-wide">CLICK →</span>
                 </div>
@@ -451,7 +451,7 @@ export default function WebsiteMaintenancePage() {
                 
                 <div className="flex items-center justify-between">
                   <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-3 py-2">
-                    <span className="text-xs font-semibold text-orange-700">3 SLOTS LEFT</span>
+                    <span className="text-xs font-semibold text-orange-700">{t('slot3Left')}</span>
                   </div>
                   <span className="text-xs font-bold text-gray-400 group-hover:text-emerald-600 transition-colors uppercase tracking-wide">CLICK →</span>
                 </div>
