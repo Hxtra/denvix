@@ -560,22 +560,6 @@ export const translations = {
     only2SlotsLeft: 'Only 2 Slots Left',
     availableSlots: 'Slots Available',
     
-    // Slot availability
-    slot2Left: '2 SLOTS LEFT',
-    slot3Left: '3 SLOTS LEFT',
-    slot4Left: '4 SLOTS LEFT',
-    slot5Left: '5 SLOTS LEFT',
-    slotsLeftDelivery: 'SLOTS LEFT',
-    deliveryMonth: 'DELIVERY',
-    
-    // Slot availability
-    slot2Left: '2 SLOTS LEFT',
-    slot3Left: '3 SLOTS LEFT',
-    slot4Left: '4 SLOTS LEFT',
-    slot5Left: '5 SLOTS LEFT',
-    slotsLeftDelivery: 'SLOTS LEFT',
-    deliveryMonth: 'DELIVERY',
-    
     // Website Development Page
     websiteDevelopment: 'Website Development',
     forNorwegianBusinesses: 'for Norwegian Businesses.',
