@@ -18,32 +18,11 @@ import {
   Facebook,
 } from "lucide-react"
 
-// Utility function to get current month
-function getCurrentMonth() {
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ]
-  return months[new Date().getMonth()]
-}
-
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [currentMonth, setCurrentMonth] = useState("")
   const { t } = useTranslation()
 
   useEffect(() => {
-    setCurrentMonth(getCurrentMonth())
     setIsLoaded(true)
     window.scrollTo(0, 0)
   }, [])
