@@ -11,13 +11,13 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Nordic Precision. Global Impact. | Hextral",
+  title: "Nordic Precision. Global Impact. | Denvix",
   description:
     "We build high-performance digital experiences tailored for Norwegian businesses. Premium development, transparent pricing, and direct communication.",
   generator: "v0.app",
   icons: {
-    icon: "/logo/hextral-logo.png",
-    apple: "/logo/hextral-logo.png",
+    icon: "/logo/denvix-logo.png",
+    apple: "/logo/denvix-logo.png",
   },
 }
 

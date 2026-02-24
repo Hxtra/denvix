@@ -15,7 +15,7 @@ export default function WebsiteDevelopmentPage() {
   }, [])
 
   const messengerLink =
-    "https://m.me/61585271784479?text=Hi%20Hextral%2C%20I%27m%20interested%20in%20the%20Website%20Development%20offer%20(15%2C000%20NOK).%20I%27d%20like%20to%20discuss%20my%20project."
+    "https://m.me/61585271784479?text=Hi%20Denvix%2C%20I%27m%20interested%20in%20the%20Website%20Development%20offer%20(15%2C000%20NOK).%20I%27d%20like%20to%20discuss%20my%20project."
 
   return (
     <div
@@ -24,9 +24,9 @@ export default function WebsiteDevelopmentPage() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <img src="/logo/hextral-logo.png" alt="Hextral Logo" className="w-8 h-8" />
-            <span className="font-semibold text-lg">Hextral</span>
+          <Link href="/" className="flex items-center gap-3">
+            <img src="/logo/denvix-logo.png" alt="Denvix Logo" className="h-10 w-auto" />
+            <span className="font-semibold text-lg">Denvix</span>
           </Link>
           <Link
             href="/#services"
@@ -465,10 +465,10 @@ export default function WebsiteDevelopmentPage() {
       <footer className="py-8 px-6 bg-[#111111] border-t border-gray-800">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-            <Link href="/" className="flex items-center gap-2">
-              <img src="/logo/hextral-logo.png" alt="Hextral Logo" className="w-8 h-8" />
-              <span className="text-white font-semibold">Hextral</span>
-            </Link>
+  <Link href="/" className="flex items-center gap-3">
+  <img src="/logo/denvix-logo.png" alt="Denvix Logo" className="h-10 w-auto" />
+  <span className="text-white font-semibold">Denvix</span>
+  </Link>
             <div className="flex items-center gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
                 {t('privacyPolicy')}
