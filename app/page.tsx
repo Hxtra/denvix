@@ -105,18 +105,31 @@ export default function Home() {
                 {t('heroDescription')}
               </p>
 
-              {/* Primary CTA Button */}
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] mb-6 shadow-lg hover:shadow-xl"
-              >
-                {t('heroButton')}
-              </a>
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.05]"
+                >
+                  {t('heroButton')}
+                  <span>→</span>
+                </a>
+                <a
+                  href="#portfolio"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-8 py-3 rounded-full font-medium border-2 border-gray-200 hover:border-gray-300 transition-all hover:scale-[1.05]"
+                >
+                  {t('viewPortfolio') || 'View Portfolio'}
+                </a>
+              </div>
 
-              {/* Trust Text */}
-              <p className="text-sm text-gray-500 mb-8">
-                {t('heroTrust')}
-              </p>
+              {/* Response Time */}
+              <div className="flex items-center gap-2 mb-8 text-gray-500">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                  <path strokeWidth="2" strokeLinecap="round" d="M12 6v6l4 2"/>
+                </svg>
+                <span className="text-sm">{t('responseTime') || 'Response time: Under 2 hours'}</span>
+              </div>
 
               {/* Rating Display */}
               <div className="flex flex-col items-start gap-3">
@@ -642,7 +655,7 @@ function ServiceCard({
   slotsLeft: number
 }) {
   return (
-    <div className="liquid-glass-service-card p-8 rounded-2xl relative overflow-hidden group transition-all hover:scale-[1.01]">
+    <div className="liquid-glass-service-card p-8 rounded-2xl relative overflow-hidden group transition-all hover:scale-[1.01] hover:shadow-lg cursor-pointer border-2 border-transparent hover:border-gray-300 flex flex-col h-full">
       {/* Discount Badge */}
       <div className="absolute top-6 right-6 bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-semibold">
         {discount}
@@ -651,13 +664,22 @@ function ServiceCard({
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <p className="text-gray-500 text-sm mb-6 leading-relaxed">{description}</p>
 
-      <div className="flex items-end gap-3 mb-4">
+      <div className="flex items-end gap-3 mb-6">
         <span className="text-gray-400 line-through text-sm">{originalPrice}</span>
         <span className="text-2xl font-bold">{salePrice}</span>
       </div>
 
-      <div className="flex items-center gap-2">
-        <span className="text-amber-600 text-sm font-medium">{slotsLeft} left</span>
+      {/* Scarcity Badge - Eye-Catching */}
+      <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-4 py-2 flex items-center gap-2 w-fit mb-6">
+        <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+        <span className="text-xs font-semibold text-orange-700">{slotsLeft} SLOTS LEFT · {getCurrentMonth().toUpperCase()} DELIVERY</span>
+      </div>
+
+      {/* CLICK → Button Indicator */}
+      <div className="mt-auto pt-6 border-t border-gray-200 flex items-center justify-end">
+        <span className="text-sm font-bold text-gray-600 group-hover:text-gray-900 transition-colors flex items-center gap-1">
+          CLICK <ChevronRight className="w-4 h-4" />
+        </span>
       </div>
     </div>
   )

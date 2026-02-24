@@ -18,8 +18,10 @@ export const translations = {
     heroBadge: 'Bare 2 prosjektplasser igjen for',
     heroHeadline: 'Vi bygger høykonverterende nettsteder som gjør besøkende til kunder.',
     heroDescription: 'Premiumwebdesign for ambisiøse norske bedrifter. Rask levering. Transparent prising. Virkelige resultater.',
-    heroButton: 'Book ditt gratis strategikall',
+    heroButton: 'Start Your Project',
     heroTrust: '5 gratis revisjoner til du er 100% fornøyd',
+    viewPortfolio: 'View Portfolio',
+    responseTime: 'Response time: Under 2 hours',
     heroRated: 'Vurdert 4.9 av',
     heroFrom: 'fra 50+',
     heroBusinessOwners: 'Bedriftseiere',
@@ -115,7 +117,7 @@ export const translations = {
     // Website Development Page
     websiteDevelopment: 'Nettstedsutvikling',
     forNorwegianBusinesses: 'for norske bedrifter.',
-    December: 'desember',
+    December: 'februar',
     deliveryWindow: 'leveringsvindu',
     requestOffer: 'Be om nettstedsutvikling-tilbud',
     webDevelopmentPageDesc: 'Tilpasset høyytelses nettsted bygget med React og Next.js. Rask, sikker, GDPR-klar.',
@@ -175,7 +177,7 @@ export const translations = {
     limitedOffer: 'Begrenset tilbud',
     thisProjectPrice: 'Denne prosjektprisen',
     reasonForDiscount: 'Årsak til rabatt:',
-    decemberAvailability: 'Begrenset desembertilgjengelighet og fokus på færre høykvalitetsprosjekter.',
+    decemberAvailability: 'Begrenset februartilgjengelighet og fokus på færre høykvalitetsprosjekter.',
     onlySlots: 'Bare 2 plasser tilgjengelig. Når plassene er fylt, går prisene tilbake til normalt.',
     
     // Imagine Section
@@ -212,11 +214,11 @@ export const translations = {
     requestWebsiteDevelopmentOffer: 'Be om nettstedsutvikling-tilbud',
     
     // Landing Page Dev Page - Norwegian
-    slotsLeftDecember: '4 Slots Left for December',
-    landingPageConversion: 'Landing Page Development for Businesses Ready to Convert Visitors Into Clients',
-    landingPageDesc: 'Custom high-performance landing page built with React and Next.js. Fast, conversion-focused, GDPR-ready.',
-    weekDelivery: '1-2 week delivery',
-    conversionOptimized: 'Conversion optimized',
+    slotsLeftDecember: '4 plasser igjen for februar',
+    landingPageConversion: 'Landing Page Utvikling for Bedrifter Klare til å Konvertere Besøkende til Klienter',
+    landingPageDesc: 'Tilpasset høyytelses landing page bygget med React og Next.js. Rask, konverteringsfokusert, GDPR-klar.',
+    weekDelivery: '1-2 ukers levering',
+    conversionOptimized: 'Konverteringsoptimert',
     everyVisitorCounts: 'Hver besøkende teller. Hver klikk betyr noe.',
     problemP1: 'Din nåværende side kan miste potensielle klienter før de engang leser budskapet ditt. Langsom lastetid, uklart budskap eller et forvirrende oppsett kan avskrekke interesserte besøkende på sekunder.',
     problemP2: 'Tenk deg en enkeltsidig nettsted som veileder dine besøkende jevnt og trutt, forklarer verdien din klart, og leder dem til handling uten forvirring. Det er det dette tilbudet leverer.',
@@ -253,7 +255,7 @@ export const translations = {
     typicalTimeline: 'Typisk tidslinje:',
     typicalTimelineValue: '2-4 uker med byråer',
     mostAgencies: 'De fleste norske byråer krever premiumtakster for landing pages, ofte buntet med unødvendige tjenester.',
-    decemberOffer: 'Desembertilbud',
+    decemberOffer: 'Februartilbud',
     landingPagePrice: 'NOK 7 500',
     landingPagePriceOriginal: 'NOK 15 000',
     timelineCompletion: 'Tidslinje: 1-2 uker til fullføring',
@@ -269,7 +271,7 @@ export const translations = {
     anyoneInstantDelivery: 'De som ønsker øyeblikkelig levering uten ordentlig planlegging',
     projectsUnlimitedRevisions: 'Prosjekter som krever ubegrensede revisjoner',
     limitedAvailability: 'Begrenset tilgjengelighet',
-    slotsLeftDecemberScarcity: '4 plasser igjen i desember',
+    slotsLeftDecemberScarcity: '4 plasser igjen i februar',
     onceGonePrice: 'Når de er borte, går prisen tilbake til standard. Ikke vent og gå glipp av denne muligheten.',
     noCalls2: 'Ingen samtaler. Intet press.',
     justConversation2: 'Bare en samtale.',
@@ -339,6 +341,109 @@ export const translations = {
     noPressureNoCallsMaintenance: 'Intet trykk. Ingen samtaler. Bare en samtale.',
     tellUsWhatsWrong: 'Fortell oss hva som er galt med nettstedet ditt. Vi lar deg vite om vi kan hjelpe, og hva det ville ta. Det er det.',
     responseTimeBusinessHours: 'Responstid: Under 2 timer i arbeidstid.',
+    
+    // Responsive Redesign Page - Norwegian
+    responsiveRedesignHero: 'Responsiv Redesign for Bedrifter',
+    readyToLookModern: 'Klare til å se moderne ut',
+    websiteIsFace: 'Nettstedet ditt er ansiktet på virksomheten din. Hvis det ser utdatert ut eller ikke fungerer bra på mobil, forlater besøkende før de engang ser verdien din.',
+    imagePerfectEverywhere: 'Hva om nettstedet ditt så perfekt ut overalt?',
+    transformedIntoFast: 'Tenk deg det gamle nettstedet ditt transformert til en rask, moderne og responsiv opplevelse. Besøkende på telefoner, nettbrett eller stasjonær datamaskin ser perfektion hver gang.',
+    noMorePinching: 'Ikke mer knipping for å zoome. Ikke mer sideveis scrolling. Ikke mer skam når en klient besøker nettstedet ditt på telefonen. Bare en ren, profesjonell opplevelse som representerer virksomheten din slik den fortjener.',
+    competitorsLookModern: 'Konkurrentene dine ser allerede moderne ut. Klientene dine forventer moderne. Det er på tide at nettstedet ditt hang med—uten å begynne fra bunnen av.',
+    whyThisMattersResponsive: 'Hvorfor dette betyr noe for virksomheten din',
+    professionalAnyDevice: 'Profesjonell på hvilken som helst enhet',
+    siteAdaptsBeautifully: 'Nettstedet ditt tilpasser seg vakkert til telefoner, nettbrett og stasjonær datamaskin. Første inntrykk skjer overalt.',
+    increasedUserEngagement: 'Økt brukerengasjement',
+    whenVisitorsNavigate: 'Når besøkende kan navigere lett, blir de lenger. Lengre opphold betyr mer konverteringer.',
+    reducedBounceRates: 'Reduserte avslutningsfrekvenser',
+    mobileUsersLeave: 'Brukere på mobil forlater ødelagte nettsteder på sekunder. En responsiv redesign holder dem lesende, scrollende, handlende.',
+    modernWithoutRebuilding: 'Moderne uten å bygge på nytt',
+    updateYourDesign: 'Vi oppdaterer designet ditt mens vi holder merkeidentiteten din intakt. Evolusjon, ikke revolusjon.',
+    worksAcrossAllBrowsers: 'Fungerer på tvers av alle nettlesere',
+    chromeFirefox: 'Chrome, Safari, Firefox, Edge—nettstedet ditt fungerer konsekvent for hver besøkende.',
+    betterSearchRankings: 'Bedre søkerankinger',
+    googleMobileFriendly: 'Google prioriterer mobilvenlige nettsteder. En responsiv redesign hjelper deg med å bli funnet.',
+    whatYouGetResponsive: 'Det du får',
+    fullResponsiveRedesign: 'Fullstendig responsiv redesign med React/Next.js',
+    mobileFirstLayoutTablet: 'Mobil-først layout og nettbrettsoptimalisering',
+    modernDesignUpdate: 'Moderne designoppdatering mens merkeidentiteten opprettholdes',
+    performancespeedImprovements: 'Ytelse- og hastighetsforbedringar',
+    seoFriendlyStructureResponsive: 'SEO-vennlig struktur',
+    postLaunchSupport14Days: '14 dagers post-launch support',
+    processTimeline: 'Prosess & Tidslinje',
+    transparentStepsClear: 'Transparente steg. Klar kommunikasjon. Ingen overraskelser.',
+    day1To2Evaluation: 'Dag 1–2: Evaluering og planlegging',
+    reviewCurrentSite: 'Vi gjennomgår nåværende nettsted, identifiserer hva som fungerer, og planlegger den responsive redesignen. Innhold og eiendeler samlet inn.',
+    day3To7Redesign: 'Dag 3–7: Redesign og utvikling',
+    siteTransformed: 'Nettstedet ditt transformeres. Mobil-først tilnærming, moderne estetikk, merket ditt opprettholdt. Du ser fremgang hele tiden.',
+    day8To10Testing: 'Dag 8–10: Testing og lansering',
+    rigorousTesting: 'Grundig testing på tvers av alle enheter og nettlesere. Endelige justeringer basert på din tilbakemelding. Deretter går vi live.',
+    costTypicalTimelines: 'Kostnader & Typiske tidslinjer',
+    norwegianMarket: 'Norsk marked',
+    whatOthersCharge: 'Hva andre typisk belaster:',
+    basicResponsiveUpdates: 'Grunnleggende responsive oppdateringer',
+    basicResponsivePrice: 'NOK 8 000 – 15 000',
+    fullResponsiveRedesignPrice: 'Fullstendig responsiv redesign',
+    fullResponsivePrice: 'NOK 12 000 – 25 000',
+    completeSiteModernization: 'Fullstendig nettstedets modernisering',
+    completeSitePrice: 'NOK 25 000 – 50 000+',
+    responsiveRedesignPackage: 'Responsiv Redesign Pakke',
+    transformYourSite: 'Transformer nettstedet ditt for alle enheter.',
+    nok6000: 'NOK 6 000',
+    nok12000: 'NOK 12 000',
+    whyDiscount: 'Hvorfor rabatten?',
+    limitedDecemberAvailability: 'Begrenset februartilgjengelighet. Vi fokuserer på færre prosjekter for å levere eksepsjonell kvalitet.',
+    threeSlots: '3 plasser tilgjengelig. Når de er fylt, går prisingen tilbake til normal.',
+    whoThisIsForResponsive: 'Hvem dette er for',
+    businessesOutdated: 'Bedrifter med utdaterte nettsteder som trenger modernisering',
+    companiesWantingBetter: 'Bedrifter som ønsker bedre mobilopplevelser for klienter',
+    anyoneWhoWants: 'Alle som ønsker et profesjonelt, rent utseende uten full omutviklng',
+    brandReadyToStop: 'Merker klare til å slutte å miste mobiltilgang',
+    whoThisIsNotForResponsive: 'Hvem dette ikke er for',
+    thoseWantingBrand: 'De som ønsker et helt nytt komplekst nettsted',
+    anyoneExpectingUnlimited: 'Alle som forventer ubegrensede redesign-revisjoner',
+    companiesRushing: 'Bedrifter som har det travelt med prosjekter på mindre enn en uke',
+    projectsRequiringComplete: 'Prosjekter som krever fullstendig rebranding',
+    readyToLookModernCTA: 'Klare til å se moderne ut?',
+    noCalls: 'Ingen samtaler. Intet trykk. Bare en samtale.',
+    clickToStartConversation: 'Klikk for å starte en samtale på Messenger. Vi diskuterer nåværende nettsted og hvordan vi kan hjelpe.',
+    
+    // Scarcity & Service Card Translations
+    slotsLeft: 'plasser igjen',
+    decemberDelivery: 'februar levering',
+    exploreOtherServices: 'Utforsk andre tjenester',
+    limitedAvailability: 'Begrenset tilgjengelighet',
+    slotsLeftDecemberScarcity: '3 plasser igjen i februar',
+    onceGonePrice: 'Når de er borte, går prisingen tilbake til normal. Dette er en sjelden mulighet til å modernisere til halv pris.',
+    
+    // Cross-Service Navigation
+    exploreWebsiteDevelopment: 'Utforsk nettstedsutvikling',
+    exploreLandingPageDev: 'Utforsk landing page utvikling',
+    exploreWebsiteMaintenance: 'Utforsk nettstedsvedlikehold',
+    exploreResponsiveRedesign: 'Utforsk responsiv redesign',
+    
+    // Service Descriptions for Buttons
+    websiteDevelopmentShort: 'Full nettstedsutvikling fra bunnen',
+    landingPageDevShort: 'Høykonverterende landing pages',
+    websiteMaintenanceShort: 'Pågående nettstedsstøtte',
+    responsiveRedesignShort: 'Modernisering for mobil',
+    
+    // Website Development Page - Pricing Table
+    weeksDelivery24: '2-4 ukers levering',
+    weeksDelivery58: '5-8 ukers levering',
+    
+    // Landing Page Dev - What You Get List
+    customHighConvertingLandingPage: 'Tilpasset høykontrastert landing page bygget med React/Next.js',
+    
+    // Website Maintenance - Not For Section
+    completeWebsiteRebuilds: 'Komplette nettstedsgjenoppbygginger',
+    
+    // Responsive Redesign - Footer & Device Names
+    privacyPolicy: 'Personvern',
+    termsOfServiceFooter: 'Vilkår for tjenesten',
+    mobile: 'Mobil',
+    tablet: 'Nettbrett',
+    desktop: 'Skrivebord',
   },
   en: {
     // Language Selector
@@ -359,8 +464,10 @@ export const translations = {
     heroBadge: 'Only 2 project slots left for',
     heroHeadline: 'We Build High-Converting Websites That Turn Visitors Into Clients.',
     heroDescription: 'Premium web design for ambitious Norwegian businesses. Fast delivery. Transparent pricing. Real results.',
-    heroButton: 'Book Your Free Strategy Call',
+    heroButton: 'Start Your Project',
     heroTrust: '5 Free Revisions Until You\'re 100% Satisfied',
+    viewPortfolio: 'View Portfolio',
+    responseTime: 'Response time: Under 2 hours',
     heroRated: 'Rated 4.9 by',
     heroFrom: 'from 50+',
     heroBusinessOwners: 'Business Owners',
@@ -456,7 +563,7 @@ export const translations = {
     // Website Development Page
     websiteDevelopment: 'Website Development',
     forNorwegianBusinesses: 'for Norwegian Businesses.',
-    December: 'December',
+    December: 'February',
     deliveryWindow: 'delivery window',
     requestOffer: 'Request Website Development Offer',
     webDevelopmentPageDesc: 'Custom high-performance website built with React and Next.js. Fast, secure, GDPR-ready.',
@@ -516,7 +623,7 @@ export const translations = {
     limitedOffer: 'Limited Offer',
     thisProjectPrice: 'This project price',
     reasonForDiscount: 'Reason for discount:',
-    decemberAvailability: 'Limited December availability and focus on fewer high-quality projects.',
+    decemberAvailability: 'Limited February availability and focus on fewer high-quality projects.',
     onlySlots: 'Only 2 slots available. Once filled, pricing returns to normal.',
     
     // Imagine Section
@@ -553,7 +660,7 @@ export const translations = {
     requestWebsiteDevelopmentOffer: 'Request Website Development Offer',
     
     // Landing Page Dev Page - English
-    slotsLeftDecember: '4 Slots Left for December',
+    slotsLeftDecember: '4 Slots Left for February',
     landingPageConversion: 'Landing Page Development for Businesses Ready to Convert Visitors Into Clients',
     landingPageDesc: 'Custom high-performance landing page built with React and Next.js. Fast, conversion-focused, GDPR-ready.',
     weekDelivery: '1-2 week delivery',
@@ -594,11 +701,11 @@ export const translations = {
     typicalTimeline: 'Typical timeline:',
     typicalTimelineValue: '2-4 weeks with agencies',
     mostAgencies: 'Most Norwegian agencies charge premium rates for landing pages, often bundling unnecessary services.',
-    decemberOffer: 'December Offer',
+    decemberOffer: 'February Offer',
     landingPagePrice: 'NOK 7,500',
     landingPagePriceOriginal: 'NOK 15,000',
     timelineCompletion: 'Timeline: 1-2 weeks for completion',
-    whyDiscountLP: 'Why the discount? Limited December availability and focus on fewer high-quality projects.',
+    whyDiscountLP: 'Why the discount? Limited February availability and focus on fewer high-quality projects.',
     onlySlots4: 'Only 4 slots available. Once filled, pricing returns to standard.',
     whoThisForLP: 'Who this is for',
     whoThisNotForLP: 'Who this is not for',
@@ -610,7 +717,7 @@ export const translations = {
     anyoneInstantDelivery: 'Those who want instant delivery without proper planning',
     projectsUnlimitedRevisions: 'Projects requiring unlimited revisions',
     limitedAvailability: 'Limited Availability',
-    slotsLeftDecemberScarcity: '4 slots left in December',
+    slotsLeftDecemberScarcity: '4 slots left in February',
     onceGonePrice: 'Once gone, the price goes back to standard. Don\'t wait and miss this opportunity.',
     noCalls2: 'No calls. No pressure.',
     justConversation2: 'Just a conversation.',
@@ -680,6 +787,43 @@ export const translations = {
     noPressureNoCallsMaintenance: 'No Pressure. No Calls. Just a Conversation.',
     tellUsWhatsWrong: 'Tell us what\'s going on with your website. We\'ll let you know if we can help, and what it would take. That\'s it.',
     responseTimeBusinessHours: 'Response time: Under 2 hours during business hours.',
+    
+    // Scarcity & Service Card Translations
+    slotsLeft: 'slots left',
+    decemberDelivery: 'February delivery',
+    exploreOtherServices: 'Explore Other Services',
+    limitedAvailability: 'Limited Availability',
+    slotsLeftDecemberScarcity: '3 slots left in February',
+    onceGonePrice: 'Once gone, the price goes back to normal. This is a rare opportunity to modernize at half price.',
+    
+    // Cross-Service Navigation
+    exploreWebsiteDevelopment: 'Explore Website Development',
+    exploreLandingPageDev: 'Explore Landing Page Dev',
+    exploreWebsiteMaintenance: 'Explore Website Maintenance',
+    exploreResponsiveRedesign: 'Explore Responsive Redesign',
+    
+    // Service Descriptions for Buttons
+    websiteDevelopmentShort: 'Full website development from scratch',
+    landingPageDevShort: 'High-converting landing pages',
+    websiteMaintenanceShort: 'Ongoing website support',
+    responsiveRedesignShort: 'Mobile-first modernization',
+    
+    // Website Development Page - Pricing Table
+    weeksDelivery24: '2-4 weeks delivery',
+    weeksDelivery58: '5-8 weeks delivery',
+    
+    // Landing Page Dev - What You Get List
+    customHighConvertingLandingPage: 'Custom high-converting landing page built with React/Next.js',
+    
+    // Website Maintenance - Not For Section
+    completeWebsiteRebuilds: 'Complete website rebuilds',
+    
+    // Responsive Redesign - Footer & Device Names
+    privacyPolicy: 'Privacy Policy',
+    termsOfServiceFooter: 'Terms of Service',
+    mobile: 'Mobile',
+    tablet: 'Tablet',
+    desktop: 'Desktop',
   },
 }
 
