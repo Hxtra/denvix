@@ -105,18 +105,31 @@ export default function Home() {
                 {t('heroDescription')}
               </p>
 
-              {/* Primary CTA Button */}
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 transition-all hover:scale-[1.02] mb-6 shadow-lg hover:shadow-xl"
-              >
-                {t('heroButton')}
-              </a>
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition-all hover:scale-[1.05]"
+                >
+                  {t('heroButton')}
+                  <span>→</span>
+                </a>
+                <a
+                  href="#portfolio"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-8 py-3 rounded-full font-medium border-2 border-gray-200 hover:border-gray-300 transition-all hover:scale-[1.05]"
+                >
+                  {t('viewPortfolio') || 'View Portfolio'}
+                </a>
+              </div>
 
-              {/* Trust Text */}
-              <p className="text-sm text-gray-500 mb-8">
-                {t('heroTrust')}
-              </p>
+              {/* Response Time */}
+              <div className="flex items-center gap-2 mb-8 text-gray-500">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" strokeWidth="2"/>
+                  <path strokeWidth="2" strokeLinecap="round" d="M12 6v6l4 2"/>
+                </svg>
+                <span className="text-sm">{t('responseTime') || 'Response time: Under 2 hours'}</span>
+              </div>
 
               {/* Rating Display */}
               <div className="flex flex-col items-start gap-3">
