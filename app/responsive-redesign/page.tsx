@@ -4,7 +4,24 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Check, Clock, Users, XCircle, Smartphone, Monitor, Tablet } from "lucide-react"
 import { useTranslation } from "@/app/hooks/useTranslation"
-import { getCurrentMonth } from "@/app/utils/getMonth"
+
+function getCurrentMonth() {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+  return months[new Date().getMonth()]
+}
 
 export default function ResponsiveRedesignPage() {
   const [isLoaded, setIsLoaded] = useState(false)

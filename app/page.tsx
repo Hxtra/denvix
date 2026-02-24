@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { LanguageSelector } from "@/app/components/LanguageSelector"
 import { useTranslation } from "@/app/hooks/useTranslation"
-import { getCurrentMonth } from "@/app/utils/getMonth"
 import {
   Clock,
   Globe,
@@ -18,11 +17,32 @@ import {
   Facebook,
 } from "lucide-react"
 
+// Utility function to get current month
+function getCurrentMonth() {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+  return months[new Date().getMonth()]
+}
+
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
+  const [currentMonth, setCurrentMonth] = useState("")
   const { t } = useTranslation()
 
   useEffect(() => {
+    setCurrentMonth(getCurrentMonth())
     setIsLoaded(true)
     window.scrollTo(0, 0)
   }, [])
@@ -621,8 +641,6 @@ function ServiceCard({
   salePrice: string
   slotsLeft: number
 }) {
-  const currentMonth = getCurrentMonth().toUpperCase()
-  
   return (
     <div className="liquid-glass-service-card p-8 rounded-2xl relative overflow-hidden group transition-all hover:scale-[1.01] hover:shadow-lg cursor-pointer border-2 border-transparent hover:border-gray-300 flex flex-col h-full">
       {/* Discount Badge */}
@@ -641,7 +659,7 @@ function ServiceCard({
       {/* Scarcity Badge - Eye-Catching */}
       <div className="bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full px-4 py-2 flex items-center gap-2 w-fit mb-6">
         <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-        <span className="text-xs font-semibold text-orange-700">{slotsLeft} SLOTS LEFT · {currentMonth} DELIVERY</span>
+        <span className="text-xs font-semibold text-orange-700">{slotsLeft} SLOTS LEFT · {getCurrentMonth().toUpperCase()} DELIVERY</span>
       </div>
 
       {/* CLICK → Button Indicator */}
