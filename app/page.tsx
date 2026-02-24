@@ -39,13 +39,18 @@ function getCurrentMonth() {
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [currentMonth, setCurrentMonth] = useState("")
-  const { t } = useTranslation()
+  const { t, language } = useTranslation()
 
   useEffect(() => {
     setCurrentMonth(getCurrentMonth())
     setIsLoaded(true)
     window.scrollTo(0, 0)
   }, [])
+
+  // Suppress hydration warning for dynamic content
+  if (!isLoaded) {
+    return <div suppressHydrationWarning></div>
+  }
 
   return (
     <div

@@ -32,6 +32,10 @@ export default function ResponsiveRedesignPage() {
     window.scrollTo(0, 0)
   }, [])
 
+  if (!isLoaded) {
+    return <div suppressHydrationWarning></div>
+  }
+
   const messengerLink = `https://m.me/61585271784479?text=${encodeURIComponent("Interested in: Responsive Redesign. 50% OFF.")}`
 
   return (

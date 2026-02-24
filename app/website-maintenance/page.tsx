@@ -14,6 +14,10 @@ export default function WebsiteMaintenancePage() {
     window.scrollTo(0, 0)
   }, [])
 
+  if (!isLoaded) {
+    return <div suppressHydrationWarning></div>
+  }
+
   const messengerLink = `https://m.me/61585271784479?text=${encodeURIComponent("Hi, I'm interested in the Website Maintenance offer (50% OFF). I'd like to discuss my website's needs.")}`
 
   return (

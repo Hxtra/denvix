@@ -14,6 +14,10 @@ export default function WebsiteDevelopmentPage() {
     window.scrollTo(0, 0)
   }, [])
 
+  if (!isLoaded) {
+    return <div suppressHydrationWarning></div>
+  }
+
   const messengerLink =
     "https://m.me/61585271784479?text=Hi%20Denvix%2C%20I%27m%20interested%20in%20the%20Website%20Development%20offer%20(15%2C000%20NOK).%20I%27d%20like%20to%20discuss%20my%20project."
 

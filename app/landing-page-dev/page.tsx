@@ -14,6 +14,10 @@ export default function LandingPageDevOffer() {
     window.scrollTo(0, 0)
   }, [])
 
+  if (!isLoaded) {
+    return <div suppressHydrationWarning></div>
+  }
+
   const messengerLink = `https://m.me/61585271784479?text=${encodeURIComponent("Hi Denvix, I'm interested in: Landing Page Development. 50% OFF.")}`
 
   return (
